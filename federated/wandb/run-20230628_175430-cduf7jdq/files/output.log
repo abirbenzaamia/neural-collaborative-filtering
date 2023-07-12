@@ -1,0 +1,100 @@
+
+
+
+
+
+
+
+
+
+
+
+
+epoch: 10, loss: 0.69, time: 2.36:   2%|█                                       | 10/400 [01:13<1:54:23, 17.60s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 20, loss: 0.62, time: 2.31:   5%|█▉                                        | 19/400 [01:36<18:39,  2.94s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+epoch: 30, loss: 0.54, time: 4.02:   8%|███                                     | 30/400 [03:41<1:51:33, 18.09s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 40, loss: 0.49, time: 2.35:  10%|████                                      | 39/400 [04:05<18:07,  3.01s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 50, loss: 0.49, time: 2.34:  12%|█████▏                                    | 49/400 [05:19<17:26,  2.98s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+epoch: 60, loss: 0.49, time: 2.36:  15%|██████                                  | 60/400 [07:22<1:40:05, 17.66s/it]
+
+
+
+
+
+
+
+
+epoch: 69, loss: 0.49, time: 2.37:  17%|███████▏                                  | 69/400 [07:45<37:11,  6.74s/it]
+Traceback (most recent call last):
+  File "src/main.py", line 93, in <module>
+    main()
+  File "src/main.py", line 74, in main
+    trained_model = run_server(dataset, num_clients=args.c, epochs=args.epochs,
+  File "/home/abenzaamia/NeuCF/federated/src/server.py", line 39, in run_server
+    trained_weights = training_process(server_model, clients, num_clients, epochs, local_epochs, dataset, args)
+  File "/home/abenzaamia/NeuCF/federated/src/fedmlp/train.py", line 66, in training_process
+    w, loss = single_train_round(server_model, clients, local_epochs)
+  File "/home/abenzaamia/NeuCF/federated/src/fedmlp/train.py", line 112, in single_train_round
+    weights, loss = client.train(server_model_copy, local_epochs)
+  File "/home/abenzaamia/NeuCF/federated/src/client.py", line 49, in train
+    loss.backward()
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 200, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

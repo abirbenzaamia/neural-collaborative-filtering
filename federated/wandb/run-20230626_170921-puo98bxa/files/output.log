@@ -1,0 +1,339 @@
+
+
+
+
+
+epoch: 10, loss: 0.53, time: 0.80:   2%|▏      | 9/400 [00:09<06:00,  1.08it/s]
+
+
+
+
+
+epoch: 19, loss: 0.48, time: 0.83:   5%|▎     | 19/400 [00:19<06:34,  1.03s/it]
+
+
+
+
+
+epoch: 29, loss: 0.49, time: 1.19:   7%|▍     | 29/400 [00:29<05:39,  1.09it/s]
+
+
+
+
+
+epoch: 39, loss: 0.48, time: 0.82:  10%|▌     | 39/400 [00:39<05:33,  1.08it/s]
+
+
+
+
+
+
+epoch: 50, loss: 0.49, time: 0.89:  12%|▊     | 50/400 [00:51<06:25,  1.10s/it]
+
+
+
+
+epoch: 59, loss: 0.48, time: 0.69:  15%|▉     | 59/400 [00:59<04:21,  1.31it/s]
+
+
+
+
+
+epoch: 69, loss: 0.48, time: 0.69:  17%|█     | 69/400 [01:09<04:55,  1.12it/s]
+
+
+
+
+
+
+epoch: 80, loss: 0.47, time: 0.91:  20%|█▏    | 80/400 [01:21<05:48,  1.09s/it]
+
+
+
+
+
+epoch: 90, loss: 0.48, time: 1.20:  22%|█▎    | 90/400 [01:31<05:20,  1.03s/it]
+
+
+
+
+epoch: 98, loss: 0.47, time: 0.96:  24%|█▍    | 98/400 [01:39<04:34,  1.10it/s]
+
+
+
+
+
+
+epoch: 109, loss: 0.44, time: 0.87:  27%|█   | 109/400 [01:51<05:18,  1.09s/it]
+
+
+
+
+epoch: 118, loss: 0.46, time: 0.72:  30%|█▏  | 118/400 [01:59<04:07,  1.14it/s]
+
+
+
+
+
+epoch: 128, loss: 0.43, time: 0.69:  32%|█▎  | 128/400 [02:09<03:58,  1.14it/s]
+
+
+
+
+
+
+epoch: 139, loss: 0.47, time: 0.71:  35%|█▍  | 139/400 [02:21<04:50,  1.11s/it]
+
+
+
+
+
+epoch: 149, loss: 0.43, time: 0.55:  37%|█▍  | 149/400 [02:31<03:24,  1.23it/s]
+
+
+
+
+
+epoch: 159, loss: 0.45, time: 0.89:  40%|█▌  | 159/400 [02:41<03:33,  1.13it/s]
+
+
+
+
+
+epoch: 168, loss: 0.45, time: 1.37:  42%|█▋  | 168/400 [02:51<04:37,  1.19s/it]
+
+
+
+
+
+epoch: 179, loss: 0.43, time: 0.66:  45%|█▊  | 179/400 [03:01<03:10,  1.16it/s]
+
+
+
+
+
+epoch: 189, loss: 0.43, time: 0.65:  47%|█▉  | 189/400 [03:10<02:58,  1.18it/s]
+
+
+
+
+
+
+epoch: 199, loss: 0.46, time: 2.25:  50%|█▉  | 199/400 [03:23<05:04,  1.52s/it]
+
+
+
+
+
+
+
+
+epoch: 209, loss: 0.47, time: 1.98:  52%|██  | 209/400 [03:43<05:57,  1.87s/it]
+
+
+
+
+
+
+
+
+epoch: 219, loss: 0.41, time: 1.70:  55%|██▏ | 219/400 [04:04<05:51,  1.94s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 229, loss: 0.47, time: 3.13:  57%|██▎ | 229/400 [04:28<07:32,  2.65s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 239, loss: 0.47, time: 2.19:  60%|██▍ | 239/400 [04:49<05:36,  2.09s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 250, loss: 0.40, time: 1.72:  62%|██▌ | 250/400 [05:11<04:59,  2.00s/it]
+
+
+
+
+
+
+
+
+
+epoch: 260, loss: 0.46, time: 2.97:  65%|██▌ | 260/400 [05:35<06:23,  2.74s/it]
+
+
+
+
+
+
+
+
+
+epoch: 270, loss: 0.43, time: 1.63:  68%|██▋ | 270/400 [05:56<04:19,  1.99s/it]
+
+
+
+
+
+
+
+
+
+epoch: 279, loss: 0.42, time: 1.98:  70%|██▊ | 279/400 [06:18<05:14,  2.60s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 289, loss: 0.42, time: 3.03:  72%|██▉ | 289/400 [06:42<04:55,  2.67s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 299, loss: 0.40, time: 1.91:  75%|██▉ | 299/400 [07:07<04:28,  2.66s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 310, loss: 0.42, time: 2.32:  78%|███ | 310/400 [07:29<03:08,  2.09s/it]
+
+
+
+
+
+
+
+
+
+epoch: 319, loss: 0.43, time: 2.96:  80%|███▏| 319/400 [07:50<03:18,  2.45s/it]
+
+
+
+
+
+
+
+
+
+epoch: 329, loss: 0.41, time: 2.63:  82%|███▎| 329/400 [08:13<02:33,  2.17s/it]
+
+
+
+
+
+
+
+
+
+epoch: 339, loss: 0.46, time: 2.01:  85%|███▍| 339/400 [08:33<01:59,  1.95s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 349, loss: 0.43, time: 2.82:  87%|███▍| 349/400 [08:55<02:06,  2.48s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 359, loss: 0.40, time: 2.11:  90%|███▌| 359/400 [09:19<01:30,  2.20s/it]
+
+
+
+
+
+
+
+
+
+epoch: 369, loss: 0.41, time: 1.64:  92%|███▋| 369/400 [09:38<00:56,  1.82s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 380, loss: 0.42, time: 2.96:  95%|███▊| 379/400 [10:04<00:52,  2.52s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 390, loss: 0.40, time: 3.09:  98%|███▉| 390/400 [10:28<00:23,  2.38s/it]
+
+
+
+
+
+
+
+epoch: 399, loss: 0.43, time: 0.97: 100%|███▉| 399/400 [10:45<00:01,  1.85s/it]
+HR@10 = 0.4302134646962233
+
+epoch: 400, loss: 0.42, time: 2.06: 100%|████| 400/400 [10:47<00:00,  1.62s/it]
+hit rate: 0.43, normalized discounted cumulative gain: 0.23
+mean average precision @ k: 0.16, mean average recall @ k: 0.16
+Recommendations for user id: 1
+['Star Wars: Episode V - The Empire Strikes Back (1980)--Action|Adventure|Sci-Fi', 'Godfather, The (1972)--Crime|Drama', 'Lord of the Rings: The Two Towers, The (2002)--Adventure|Fantasy', 'Lord of the Rings: The Fellowship of the Ring, The (2001)--Adventure|Fantasy', 'Spider-Man (2002)--Action|Adventure|Sci-Fi|Thriller', 'Lion King, The (1994)--Adventure|Animation|Children|Drama|Musical|IMAX', 'Forrest Gump (1994)--Comedy|Drama|Romance|War', 'Back to the Future (1985)--Adventure|Comedy|Sci-Fi', 'Star Wars: Episode VI - Return of the Jedi (1983)--Action|Adventure|Sci-Fi', 'Star Wars: Episode IV - A New Hope (1977)--Action|Adventure|Sci-Fi']
+Historical data for user id: 1
+['Shawshank Redemption, The (1994)--Crime|Drama', 'Gladiator (2000)--Action|Adventure|Drama', 'Kill Bill: Vol. 1 (2003)--Action|Crime|Thriller', 'Collateral (2004)--Action|Crime|Drama|Thriller', 'Tommy Boy (1995)--Comedy']

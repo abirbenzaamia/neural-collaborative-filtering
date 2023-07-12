@@ -1,0 +1,123 @@
+
+
+
+
+epoch: 11, loss: 0.67, time: 0.38:   3%|▍               | 11/400 [00:07<03:29,  1.86it/s]
+
+
+epoch: 19, loss: 0.67, time: 0.43:   5%|▊               | 19/400 [00:11<03:15,  1.94it/s]
+
+
+
+epoch: 30, loss: 0.67, time: 0.44:   8%|█▏              | 30/400 [00:17<03:23,  1.81it/s]
+
+
+
+epoch: 39, loss: 0.67, time: 0.67:  10%|█▌              | 39/400 [00:23<03:56,  1.52it/s]
+
+
+
+epoch: 50, loss: 0.67, time: 0.48:  12%|█▉              | 49/400 [00:29<03:16,  1.79it/s]
+
+
+
+epoch: 61, loss: 0.67, time: 0.57:  15%|██▍             | 61/400 [00:35<03:01,  1.87it/s]
+
+
+epoch: 69, loss: 0.67, time: 0.69:  17%|██▊             | 69/400 [00:39<03:03,  1.80it/s]
+
+
+
+epoch: 82, loss: 0.67, time: 0.37:  20%|███▎            | 82/400 [00:45<02:18,  2.30it/s]
+
+
+epoch: 91, loss: 0.67, time: 0.35:  23%|███▋            | 91/400 [00:49<02:11,  2.34it/s]
+
+
+
+epoch: 99, loss: 0.66, time: 1.05:  25%|███▉            | 99/400 [00:55<04:01,  1.25it/s]
+
+
+
+
+epoch: 112, loss: 0.66, time: 0.39:  28%|███▉          | 112/400 [01:03<02:36,  1.84it/s]
+
+
+epoch: 121, loss: 0.66, time: 0.38:  30%|████▏         | 121/400 [01:08<02:13,  2.09it/s]
+
+
+
+epoch: 130, loss: 0.65, time: 0.74:  32%|████▌         | 130/400 [01:13<03:08,  1.43it/s]
+
+
+epoch: 139, loss: 0.66, time: 0.55:  35%|████▊         | 139/400 [01:17<02:14,  1.95it/s]
+
+
+
+epoch: 151, loss: 0.66, time: 0.34:  38%|█████▎        | 151/400 [01:23<01:57,  2.12it/s]
+
+
+
+epoch: 161, loss: 0.66, time: 0.57:  40%|█████▋        | 161/400 [01:30<02:45,  1.44it/s]
+
+
+
+epoch: 172, loss: 0.66, time: 0.47:  43%|██████        | 172/400 [01:36<02:04,  1.83it/s]
+
+
+epoch: 179, loss: 0.66, time: 0.41:  45%|██████▎       | 179/400 [01:39<01:59,  1.85it/s]
+
+
+
+epoch: 189, loss: 0.66, time: 0.54:  47%|██████▌       | 189/400 [01:46<02:09,  1.63it/s]
+
+
+
+epoch: 200, loss: 0.66, time: 0.47:  50%|██████▉       | 199/400 [01:52<01:43,  1.94it/s]
+
+
+epoch: 208, loss: 0.66, time: 0.46:  52%|███████▎      | 208/400 [01:55<01:28,  2.17it/s]
+
+
+
+epoch: 220, loss: 0.65, time: 0.53:  55%|███████▋      | 220/400 [02:02<01:49,  1.64it/s]
+
+
+
+epoch: 232, loss: 0.66, time: 0.33:  58%|████████      | 232/400 [02:08<01:18,  2.13it/s]
+
+
+epoch: 241, loss: 0.66, time: 0.32:  60%|████████▍     | 241/400 [02:11<01:08,  2.33it/s]
+
+
+epoch: 249, loss: 0.65, time: 0.51:  62%|████████▋     | 249/400 [02:16<01:21,  1.86it/s]
+
+
+
+epoch: 261, loss: 0.65, time: 0.40:  65%|█████████▏    | 261/400 [02:22<01:11,  1.95it/s]
+
+
+epoch: 270, loss: 0.65, time: 0.35:  68%|█████████▍    | 270/400 [02:26<01:05,  1.99it/s]
+
+
+
+epoch: 281, loss: 0.65, time: 0.42:  70%|█████████▊    | 281/400 [02:31<01:07,  1.75it/s]
+epoch: 284, loss: 0.65, time: 0.33:  71%|█████████▉    | 284/400 [02:33<01:02,  1.85it/s]
+Traceback (most recent call last):
+  File "src/main.py", line 93, in <module>
+    main()
+  File "src/main.py", line 74, in main
+    trained_model = run_server(dataset, num_clients=args.c, epochs=args.epochs,
+  File "/home/abenzaamia/MLP/federated/src/server.py", line 39, in run_server
+    trained_weights = training_process(server_model, clients, num_clients, epochs, local_epochs, dataset, args)
+  File "/home/abenzaamia/MLP/federated/src/fedmlp/train.py", line 66, in training_process
+    w, loss = single_train_round(server_model, clients, local_epochs)
+  File "/home/abenzaamia/MLP/federated/src/fedmlp/train.py", line 112, in single_train_round
+    weights, loss = client.train(server_model_copy, local_epochs)
+  File "/home/abenzaamia/MLP/federated/src/client.py", line 49, in train
+    loss.backward()
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 200, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

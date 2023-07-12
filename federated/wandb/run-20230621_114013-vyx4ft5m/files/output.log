@@ -1,0 +1,26 @@
+
+
+
+
+
+
+
+
+
+
+epoch: 10, loss: 0.62, time: 2.13:   2%|█▌                                                                   | 9/400 [00:23<16:40,  2.56s/it]
+Traceback (most recent call last):
+  File "src/main.py", line 91, in <module>
+    main()
+  File "src/main.py", line 72, in main
+    trained_model = run_server(dataset, num_clients=args.c, epochs=args.epochs,
+  File "/home/abenzaamia/MLP/federated/src/server.py", line 39, in run_server
+    trained_weights = training_process(server_model, clients, num_clients, epochs, local_epochs, dataset, args)
+  File "/home/abenzaamia/MLP/federated/src/fedmlp/train.py", line 79, in training_process
+    hr, ndcg, mapk, mark = evaluate_model(server_model, users, items, negatives)
+  File "/home/abenzaamia/MLP/federated/src/fedmlp/eval.py", line 109, in evaluate_model
+    pred = pred.cpu().numpy().tolist()
+RuntimeError: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.

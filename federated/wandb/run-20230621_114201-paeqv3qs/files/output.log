@@ -1,0 +1,22 @@
+
+
+
+epoch: 3, loss: 0.78, time: 3.37:   1%|▋                                                                                    | 3/400 [00:08<18:46,  2.84s/it]
+Traceback (most recent call last):
+  File "src/main.py", line 91, in <module>
+    main()
+  File "src/main.py", line 72, in main
+    trained_model = run_server(dataset, num_clients=args.c, epochs=args.epochs,
+  File "/home/abenzaamia/MLP/federated/src/server.py", line 39, in run_server
+    trained_weights = training_process(server_model, clients, num_clients, epochs, local_epochs, dataset, args)
+  File "/home/abenzaamia/MLP/federated/src/fedmlp/train.py", line 66, in training_process
+    w, loss = single_train_round(server_model, clients, local_epochs)
+  File "/home/abenzaamia/MLP/federated/src/fedmlp/train.py", line 111, in single_train_round
+    weights, loss = client.train(server_model_copy, local_epochs)
+  File "/home/abenzaamia/MLP/federated/src/client.py", line 41, in train
+    dataloader = torch.utils.data.DataLoader(dataset, batch_size=BATCH_SIZE, shuffle=True)
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 351, in __init__
+    sampler = RandomSampler(dataset, generator=generator)  # type: ignore[arg-type]
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/utils/data/sampler.py", line 107, in __init__
+    raise ValueError("num_samples should be a positive integer "
+ValueError: num_samples should be a positive integer value, but got num_samples=0

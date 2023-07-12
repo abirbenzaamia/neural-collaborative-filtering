@@ -1,0 +1,38 @@
+
+----------- Itration 1 -----------
+Iteration 1 [3.7 s]: loss = 0.4585
+----------- Itration 2 -----------
+Iteration 2 [3.2 s]: loss = 0.4343
+----------- Itration 3 -----------
+Iteration 3 [3.1 s]: loss = 0.4176
+----------- Itration 4 -----------
+Iteration 4 [3.0 s]: loss = 0.3907
+----------- Itration 5 -----------
+Iteration 5 [3.0 s]: loss = 0.3654
+----------- Itration 6 -----------
+Iteration 6 [3.1 s]: loss = 0.3477
+----------- Itration 7 -----------
+Iteration 7 [3.1 s]: loss = 0.3311
+----------- Itration 8 -----------
+Iteration 8 [3.1 s]: loss = 0.3161
+----------- Itration 9 -----------
+Traceback (most recent call last):
+  File "neucf.py", line 191, in <module>
+    hist = model.fit([np.array(user_input), np.array(item_input)], #input
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 64, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/keras/engine/training.py", line 1401, in fit
+    for step in data_handler.steps():
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/keras/engine/data_adapter.py", line 1248, in steps
+    original_spe = self._steps_per_execution.numpy().item()
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 637, in numpy
+    return self.read_value().numpy()
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 712, in read_value
+    value = self._read_variable_op()
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 693, in _read_variable_op
+    if not context.executing_eagerly():
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/tensorflow/python/eager/context.py", line 2215, in executing_eagerly
+    ctx = context_safe()
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/tensorflow/python/eager/context.py", line 2131, in context_safe
+    def context_safe():
+KeyboardInterrupt

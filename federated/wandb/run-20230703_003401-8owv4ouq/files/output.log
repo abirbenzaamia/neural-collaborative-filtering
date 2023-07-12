@@ -1,0 +1,488 @@
+
+
+
+
+
+
+
+
+
+
+
+epoch: 10, loss: 0.53, time: 2.61:   2%|▍              | 10/400 [00:29<17:34,  2.70s/it]
+
+
+
+
+
+
+
+
+
+epoch: 20, loss: 0.45, time: 1.72:   5%|▋              | 19/400 [00:53<14:18,  2.25s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 30, loss: 0.49, time: 4.00:   7%|█              | 29/400 [01:22<16:18,  2.64s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 40, loss: 0.55, time: 2.33:  10%|█▌             | 40/400 [01:49<15:46,  2.63s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 50, loss: 0.51, time: 2.02:  12%|█▉             | 50/400 [02:15<15:46,  2.70s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 60, loss: 0.48, time: 1.65:  15%|██▏            | 59/400 [02:37<13:11,  2.32s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 70, loss: 0.51, time: 3.07:  17%|██▌            | 69/400 [03:02<13:39,  2.48s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 80, loss: 0.51, time: 2.56:  20%|██▉            | 79/400 [03:25<11:18,  2.11s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 90, loss: 0.49, time: 2.15:  22%|███▎           | 89/400 [03:49<11:46,  2.27s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 100, loss: 0.52, time: 2.21:  25%|███▎         | 100/400 [04:13<13:08,  2.63s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 110, loss: 0.50, time: 2.55:  28%|███▌         | 110/400 [04:37<12:41,  2.63s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 120, loss: 0.48, time: 2.27:  30%|███▊         | 119/400 [04:59<10:38,  2.27s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 130, loss: 0.49, time: 2.72:  32%|████▏        | 129/400 [05:23<10:16,  2.27s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 140, loss: 0.42, time: 2.78:  35%|████▌        | 140/400 [05:49<12:21,  2.85s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 150, loss: 0.44, time: 2.69:  37%|████▊        | 149/400 [06:11<08:42,  2.08s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 160, loss: 0.46, time: 2.17:  40%|█████▏       | 159/400 [06:35<09:02,  2.25s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 170, loss: 0.52, time: 2.70:  42%|█████▍       | 169/400 [07:00<09:17,  2.41s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 180, loss: 0.53, time: 2.02:  45%|█████▊       | 180/400 [07:26<09:22,  2.56s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 190, loss: 0.43, time: 2.48:  48%|██████▏      | 190/400 [07:49<09:22,  2.68s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 200, loss: 0.46, time: 2.32:  50%|██████▍      | 199/400 [08:11<07:34,  2.26s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 210, loss: 0.40, time: 1.93:  52%|██████▊      | 209/400 [08:34<07:01,  2.21s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 220, loss: 0.41, time: 2.27:  55%|███████▏     | 220/400 [08:58<08:05,  2.70s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 230, loss: 0.51, time: 2.04:  57%|███████▍     | 229/400 [09:21<06:34,  2.30s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 240, loss: 0.44, time: 1.81:  60%|███████▊     | 240/400 [09:46<06:37,  2.48s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 250, loss: 0.46, time: 2.18:  62%|████████     | 249/400 [10:08<05:44,  2.28s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 260, loss: 0.45, time: 2.36:  65%|████████▍    | 260/400 [10:34<06:23,  2.74s/it]
+
+
+
+
+
+
+
+
+
+epoch: 270, loss: 0.52, time: 1.98:  67%|████████▋    | 269/400 [10:56<04:47,  2.19s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 280, loss: 0.43, time: 1.98:  70%|█████████    | 280/400 [11:20<04:52,  2.44s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 290, loss: 0.45, time: 2.36:  72%|█████████▍   | 290/400 [11:44<04:51,  2.65s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 300, loss: 0.48, time: 1.98:  75%|█████████▋   | 299/400 [12:04<03:21,  2.00s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 310, loss: 0.45, time: 2.08:  78%|██████████   | 310/400 [12:28<03:53,  2.59s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 320, loss: 0.48, time: 2.40:  80%|██████████▍  | 320/400 [12:52<03:29,  2.62s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 330, loss: 0.43, time: 2.22:  82%|██████████▋  | 330/400 [13:14<03:06,  2.66s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 340, loss: 0.43, time: 2.68:  85%|███████████  | 340/400 [13:38<02:42,  2.71s/it]
+
+
+
+
+
+
+
+
+epoch: 350, loss: 0.46, time: 2.01:  88%|███████████▍ | 350/400 [13:59<01:52,  2.24s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 360, loss: 0.50, time: 2.02:  90%|███████████▋ | 360/400 [14:22<01:37,  2.44s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 370, loss: 0.40, time: 1.96:  92%|███████████▉ | 369/400 [14:44<01:11,  2.31s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 380, loss: 0.49, time: 2.03:  95%|████████████▎| 380/400 [15:06<00:47,  2.35s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 390, loss: 0.47, time: 1.63:  98%|████████████▋| 390/400 [15:28<00:23,  2.33s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 400, loss: 0.42, time: 2.07: 100%|█████████████| 400/400 [15:50<00:00,  2.38s/it]
+HR@10 = 0.33518005540166207
+The model trained in : 955.5178220272064 (s):, : 15.93 min
+hit rate: 0.34, normalized discounted cumulative gain: 0.21
+mean average precision @ k: 0.17, mean average recall @ k: 0.17
+Recommendations for user id: 1
+(397, 1892, 9857, 252, 685, 183, 737, 619, 332, 234)
+Historical data for user id: 1
+Traceback (most recent call last):
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 3652, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 147, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 176, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7080, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'title'
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "src/main.py", line 99, in <module>
+    main()
+  File "src/main.py", line 96, in main
+    print(dataset.get_movie_names(raw_path, hist))
+  File "/home/abenzaamia/NeuCF/federated/src/dataset.py", line 102, in get_movie_names
+    name = row["title"] + '--' + row["genres"]
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/pandas/core/series.py", line 1012, in __getitem__
+    return self._get_value(key)
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/pandas/core/series.py", line 1121, in _get_value
+    loc = self.index.get_loc(label)
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 3654, in get_loc
+    raise KeyError(key) from err
+KeyError: 'title'

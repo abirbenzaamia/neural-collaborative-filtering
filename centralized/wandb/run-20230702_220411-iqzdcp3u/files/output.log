@@ -1,0 +1,71 @@
+
+----------- Itration 1 -----------
+Iteration 1 [2.4 s]: loss = 0.4695
+----------- Itration 2 -----------
+Iteration 2 [1.9 s]: loss = 0.4184
+----------- Itration 3 -----------
+Iteration 3 [1.9 s]: loss = 0.4050
+----------- Itration 4 -----------
+Iteration 4 [1.9 s]: loss = 0.3841
+----------- Itration 5 -----------
+Iteration 5 [1.9 s]: loss = 0.3410
+----------- Itration 6 -----------
+Iteration 6 [1.9 s]: loss = 0.2870
+----------- Itration 7 -----------
+Iteration 7 [1.9 s]: loss = 0.2323
+----------- Itration 8 -----------
+Iteration 8 [1.9 s]: loss = 0.1823
+----------- Itration 9 -----------
+Iteration 9 [1.9 s]: loss = 0.1436
+----------- Itration 10 -----------
+Iteration 10 [1.9 s]: loss = 0.1156
+----------- Itration 11 -----------
+Iteration 11 [1.8 s]: loss = 0.0932
+----------- Itration 12 -----------
+Iteration 12 [1.9 s]: loss = 0.0777
+----------- Itration 13 -----------
+Iteration 13 [1.9 s]: loss = 0.0648
+----------- Itration 14 -----------
+Iteration 14 [1.9 s]: loss = 0.0544
+----------- Itration 15 -----------
+Iteration 15 [1.9 s]: loss = 0.0460
+----------- Itration 16 -----------
+Iteration 16 [1.9 s]: loss = 0.0401
+----------- Itration 17 -----------
+Iteration 17 [1.9 s]: loss = 0.0348
+----------- Itration 18 -----------
+Iteration 18 [1.9 s]: loss = 0.0300
+----------- Itration 19 -----------
+Iteration 19 [1.9 s]: loss = 0.0272
+----------- Itration 20 -----------
+Iteration 20 [1.9 s]: loss = 0.0243
+----------- Itration 21 -----------
+Iteration 21 [1.9 s]: loss = 0.0216
+----------- Itration 22 -----------
+Iteration 22 [1.9 s]: loss = 0.0175
+----------- Itration 23 -----------
+Iteration 23 [1.9 s]: loss = 0.0154
+----------- Itration 24 -----------
+Iteration 24 [1.9 s]: loss = 0.0135
+----------- Itration 25 -----------
+Iteration 25 [1.8 s]: loss = 0.0131
+----------- Itration 26 -----------
+Iteration 26 [1.8 s]: loss = 0.0145
+----------- Itration 27 -----------
+Iteration 27 [1.9 s]: loss = 0.0122
+----------- Itration 28 -----------
+Iteration 28 [1.8 s]: loss = 0.0120
+----------- Itration 29 -----------
+Iteration 29 [1.9 s]: loss = 0.0109
+----------- Itration 30 -----------
+Iteration 30 [1.9 s]: loss = 0.0103
+Traceback (most recent call last):
+  File "neucf.py", line 207, in <module>
+    (hits, ndcgs, apks, arks) = evaluate_model(model, testRatings, testNegatives, topK, evaluation_threads)
+  File "/home/abenzaamia/NeuCF/centralized/eval.py", line 162, in evaluate_model
+    (hr,ndcg, apk, ark) = eval_one_rating(idx)
+  File "/home/abenzaamia/NeuCF/centralized/eval.py", line 180, in eval_one_rating
+    predictions = _model.predict([users, np.array(items)], verbose=0)
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 64, in error_handler
+    return fn(*args, **kwargs)
+KeyboardInterrupt

@@ -1,0 +1,114 @@
+
+----------- Itration 1 -----------
+Iteration 1 [209.9 s]: loss = 0.5105
+----------- Itration 2 -----------
+Iteration 2 [191.6 s]: loss = 0.4958
+----------- Itration 3 -----------
+Iteration 3 [176.4 s]: loss = 0.4826
+----------- Itration 4 -----------
+Iteration 4 [86.4 s]: loss = 0.4338
+----------- Itration 5 -----------
+Iteration 5 [94.7 s]: loss = 0.3990
+----------- Itration 6 -----------
+Iteration 6 [93.3 s]: loss = 0.3921
+----------- Itration 7 -----------
+Iteration 7 [94.9 s]: loss = 0.3900
+----------- Itration 8 -----------
+Iteration 8 [96.0 s]: loss = 0.3890
+----------- Itration 9 -----------
+Iteration 9 [97.1 s]: loss = 0.3884
+----------- Itration 10 -----------
+Iteration 10 [96.6 s]: loss = 0.3880
+----------- Itration 11 -----------
+Iteration 11 [96.6 s]: loss = 0.3877
+----------- Itration 12 -----------
+Iteration 12 [94.5 s]: loss = 0.3874
+----------- Itration 13 -----------
+Iteration 13 [98.3 s]: loss = 0.3872
+----------- Itration 14 -----------
+Iteration 14 [152.0 s]: loss = 0.3870
+----------- Itration 15 -----------
+Iteration 15 [107.4 s]: loss = 0.3868
+----------- Itration 16 -----------
+Iteration 16 [98.9 s]: loss = 0.3866
+----------- Itration 17 -----------
+Iteration 17 [99.3 s]: loss = 0.3865
+----------- Itration 18 -----------
+Iteration 18 [98.2 s]: loss = 0.3863
+----------- Itration 19 -----------
+Iteration 19 [134.7 s]: loss = 0.3862
+----------- Itration 20 -----------
+Iteration 20 [129.3 s]: loss = 0.3861
+----------- Itration 21 -----------
+Iteration 21 [94.3 s]: loss = 0.3860
+----------- Itration 22 -----------
+Iteration 22 [96.5 s]: loss = 0.3859
+----------- Itration 23 -----------
+Iteration 23 [96.3 s]: loss = 0.3858
+----------- Itration 24 -----------
+Iteration 24 [96.6 s]: loss = 0.3857
+----------- Itration 25 -----------
+Iteration 25 [99.7 s]: loss = 0.3857
+----------- Itration 26 -----------
+Iteration 26 [99.3 s]: loss = 0.3856
+----------- Itration 27 -----------
+Iteration 27 [98.6 s]: loss = 0.3855
+----------- Itration 28 -----------
+Iteration 28 [98.1 s]: loss = 0.3855
+----------- Itration 29 -----------
+Iteration 29 [99.4 s]: loss = 0.3854
+----------- Itration 30 -----------
+Iteration 30 [98.3 s]: loss = 0.3854
+----------- Itration 31 -----------
+Iteration 31 [94.8 s]: loss = 0.3853
+----------- Itration 32 -----------
+Iteration 32 [97.8 s]: loss = 0.3853
+----------- Itration 33 -----------
+Iteration 33 [96.0 s]: loss = 0.3852
+----------- Itration 34 -----------
+Iteration 34 [97.9 s]: loss = 0.3852
+----------- Itration 35 -----------
+Iteration 35 [100.3 s]: loss = 0.3851
+----------- Itration 36 -----------
+Iteration 36 [99.9 s]: loss = 0.3851
+----------- Itration 37 -----------
+Iteration 37 [99.6 s]: loss = 0.3850
+----------- Itration 38 -----------
+Iteration 38 [100.5 s]: loss = 0.3850
+----------- Itration 39 -----------
+Iteration 39 [98.9 s]: loss = 0.3849
+----------- Itration 40 -----------
+Iteration 40 [97.2 s]: loss = 0.3849
+----------- Itration 41 -----------
+Iteration 41 [99.5 s]: loss = 0.3848
+----------- Itration 42 -----------
+Iteration 42 [98.9 s]: loss = 0.3848
+----------- Itration 43 -----------
+Iteration 43 [120.3 s]: loss = 0.3848
+----------- Itration 44 -----------
+Iteration 44 [225.0 s]: loss = 0.3847
+----------- Itration 45 -----------
+Iteration 45 [253.7 s]: loss = 0.3847
+----------- Itration 46 -----------
+Traceback (most recent call last):
+  File "mlp.py", line 189, in <module>
+    hist = model.fit([np.array(user_input), np.array(item_input)], #input
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 64, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/keras/engine/training.py", line 1409, in fit
+    tmp_logs = self.train_function(iterator)
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/tensorflow/python/eager/def_function.py", line 915, in __call__
+    result = self._call(*args, **kwds)
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/tensorflow/python/eager/def_function.py", line 947, in _call
+    return self._stateless_fn(*args, **kwds)  # pylint: disable=not-callable
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/tensorflow/python/eager/function.py", line 2453, in __call__
+    return graph_function._call_flat(
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/tensorflow/python/eager/function.py", line 1860, in _call_flat
+    return self._build_call_outputs(self._inference_function.call(
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/tensorflow/python/eager/function.py", line 497, in call
+    outputs = execute.execute(
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/tensorflow/python/eager/execute.py", line 54, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+KeyboardInterrupt

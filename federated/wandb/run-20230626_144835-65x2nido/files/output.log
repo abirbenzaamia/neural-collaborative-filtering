@@ -1,0 +1,281 @@
+
+
+
+
+
+
+
+epoch: 11, loss: 0.47, time: 0.89:   3%|▏     | 11/400 [00:13<07:26,  1.15s/it]
+
+
+
+
+
+
+epoch: 21, loss: 0.43, time: 0.63:   5%|▎     | 21/400 [00:25<06:30,  1.03s/it]
+
+
+
+
+
+epoch: 30, loss: 0.45, time: 1.66:   8%|▍     | 30/400 [00:35<08:06,  1.31s/it]
+
+
+
+
+
+
+
+epoch: 42, loss: 0.41, time: 1.13:  10%|▋     | 42/400 [00:50<06:47,  1.14s/it]
+
+
+
+
+
+
+epoch: 52, loss: 0.43, time: 0.89:  13%|▊     | 52/400 [01:01<05:51,  1.01s/it]
+
+
+
+
+
+epoch: 60, loss: 0.44, time: 1.22:  15%|▉     | 60/400 [01:10<06:27,  1.14s/it]
+
+
+
+
+
+
+epoch: 70, loss: 0.41, time: 1.64:  18%|█     | 70/400 [01:23<07:18,  1.33s/it]
+
+
+
+
+
+
+epoch: 80, loss: 0.42, time: 1.07:  20%|█▏    | 80/400 [01:35<06:48,  1.28s/it]
+
+
+
+
+
+epoch: 90, loss: 0.44, time: 1.34:  22%|█▎    | 90/400 [01:45<06:02,  1.17s/it]
+
+
+
+
+
+
+
+epoch: 101, loss: 0.44, time: 1.09:  25%|█   | 101/400 [01:59<06:16,  1.26s/it]
+
+
+
+
+
+
+epoch: 111, loss: 0.43, time: 0.62:  28%|█   | 111/400 [02:11<05:29,  1.14s/it]
+
+
+
+
+
+epoch: 121, loss: 0.39, time: 1.55:  30%|█▏  | 121/400 [02:21<05:35,  1.20s/it]
+
+
+
+
+
+
+epoch: 130, loss: 0.43, time: 1.62:  32%|█▎  | 130/400 [02:33<05:43,  1.27s/it]
+
+
+
+
+
+
+epoch: 140, loss: 0.42, time: 1.33:  35%|█▍  | 140/400 [02:45<05:35,  1.29s/it]
+
+
+
+
+
+epoch: 150, loss: 0.41, time: 0.64:  38%|█▌  | 150/400 [02:55<04:19,  1.04s/it]
+
+
+
+
+
+
+epoch: 160, loss: 0.40, time: 1.35:  40%|█▌  | 159/400 [03:07<04:19,  1.08s/it]
+
+
+
+
+
+
+epoch: 170, loss: 0.41, time: 1.02:  42%|█▋  | 170/400 [03:19<04:48,  1.25s/it]
+
+
+
+
+
+
+epoch: 181, loss: 0.39, time: 1.20:  45%|█▊  | 181/400 [03:31<04:03,  1.11s/it]
+
+
+
+
+
+
+epoch: 190, loss: 0.39, time: 1.10:  48%|█▉  | 190/400 [03:42<03:50,  1.10s/it]
+
+
+
+
+
+
+epoch: 201, loss: 0.37, time: 1.13:  50%|██  | 201/400 [03:55<04:06,  1.24s/it]
+
+
+
+
+
+epoch: 211, loss: 0.40, time: 0.65:  53%|██  | 211/400 [04:05<03:06,  1.01it/s]
+
+
+
+
+
+
+epoch: 220, loss: 0.37, time: 1.09:  55%|██▏ | 220/400 [04:17<03:26,  1.15s/it]
+
+
+
+
+
+
+epoch: 230, loss: 0.39, time: 1.41:  57%|██▎ | 230/400 [04:29<03:53,  1.37s/it]
+
+
+
+
+
+epoch: 240, loss: 0.35, time: 1.09:  60%|██▍ | 240/400 [04:40<03:04,  1.16s/it]
+
+
+
+
+
+
+epoch: 250, loss: 0.35, time: 0.54:  62%|██▌ | 250/400 [04:51<02:37,  1.05s/it]
+
+
+
+
+
+
+epoch: 260, loss: 0.36, time: 1.50:  65%|██▌ | 260/400 [05:04<03:06,  1.33s/it]
+
+
+
+
+
+
+epoch: 271, loss: 0.35, time: 0.99:  68%|██▋ | 271/400 [05:15<02:18,  1.07s/it]
+
+
+
+
+
+
+epoch: 281, loss: 0.36, time: 1.22:  70%|██▊ | 281/400 [05:27<02:17,  1.15s/it]
+
+
+
+
+
+
+epoch: 291, loss: 0.40, time: 1.18:  73%|██▉ | 291/400 [05:39<02:22,  1.31s/it]
+
+
+
+
+
+epoch: 300, loss: 0.38, time: 1.14:  75%|███ | 300/400 [05:49<01:53,  1.14s/it]
+
+
+
+
+
+
+epoch: 311, loss: 0.37, time: 0.72:  78%|███ | 311/400 [06:02<01:34,  1.06s/it]
+
+
+
+
+
+
+epoch: 320, loss: 0.36, time: 1.03:  80%|███▏| 320/400 [06:13<01:40,  1.25s/it]
+
+
+
+
+
+epoch: 330, loss: 0.42, time: 1.55:  82%|███▎| 330/400 [06:24<01:23,  1.19s/it]
+
+
+
+
+
+
+epoch: 340, loss: 0.37, time: 0.84:  85%|███▍| 340/400 [06:36<01:15,  1.26s/it]
+
+
+
+
+
+
+epoch: 350, loss: 0.37, time: 1.45:  88%|███▌| 350/400 [06:47<01:04,  1.29s/it]
+
+
+
+
+
+
+epoch: 361, loss: 0.38, time: 1.18:  90%|███▌| 361/400 [06:59<00:44,  1.13s/it]
+
+
+
+
+
+
+epoch: 371, loss: 0.38, time: 0.67:  93%|███▋| 371/400 [07:11<00:33,  1.14s/it]
+
+
+
+
+
+
+epoch: 381, loss: 0.37, time: 1.15:  95%|███▊| 381/400 [07:23<00:24,  1.27s/it]
+
+
+
+
+
+epoch: 390, loss: 0.35, time: 1.28:  98%|███▉| 390/400 [07:33<00:11,  1.12s/it]
+
+
+
+
+
+
+epoch: 400, loss: 0.35, time: 1.37: 100%|████| 400/400 [07:45<00:00,  1.16s/it]
+HR@10 = 0.4942528735632184
+The model trained in : 467.9088628292084 (s):, : 7.80 min
+hit rate: 0.49, normalized discounted cumulative gain: 0.27
+mean average precision @ k: 0.20, mean average recall @ k: 0.20
+Recommendations for user id: 1
+['Pulp Fiction (1994)--Comedy|Crime|Drama|Thriller', 'Star Wars: Episode IV - A New Hope (1977)--Action|Adventure|Sci-Fi', 'Matrix, The (1999)--Action|Sci-Fi|Thriller', 'Forrest Gump (1994)--Comedy|Drama|Romance|War', 'Silence of the Lambs, The (1991)--Crime|Horror|Thriller', 'Jurassic Park (1993)--Action|Adventure|Sci-Fi|Thriller', 'Braveheart (1995)--Action|Drama|War', 'Godfather, The (1972)--Crime|Drama', 'Fight Club (1999)--Action|Crime|Drama|Thriller', 'American Beauty (1999)--Drama|Romance']
+Historical data for user id: 1
+['Shawshank Redemption, The (1994)--Crime|Drama', 'Gladiator (2000)--Action|Adventure|Drama', 'Kill Bill: Vol. 1 (2003)--Action|Crime|Thriller', 'Collateral (2004)--Action|Crime|Drama|Thriller', 'Tommy Boy (1995)--Comedy']

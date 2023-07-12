@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+
+epoch: 7, loss: 0.71, time: 251.09:   2%|▌                             | 7/400 [18:43<17:31:08, 160.48s/it]
+Traceback (most recent call last):
+  File "src/main.py", line 93, in <module>
+    main()
+  File "src/main.py", line 74, in main
+    trained_model = run_server(dataset, num_clients=args.c, epochs=args.epochs,
+  File "/home/abenzaamia/NeuCF/federated/src/server.py", line 39, in run_server
+    trained_weights = training_process(server_model, clients, num_clients, epochs, local_epochs, dataset, args)
+  File "/home/abenzaamia/NeuCF/federated/src/fedmlp/train.py", line 66, in training_process
+    w, loss = single_train_round(server_model, clients, local_epochs)
+  File "/home/abenzaamia/NeuCF/federated/src/fedmlp/train.py", line 112, in single_train_round
+    weights, loss = client.train(server_model_copy, local_epochs)
+  File "/home/abenzaamia/NeuCF/federated/src/client.py", line 51, in train
+    optimizer.step()
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/optim/optimizer.py", line 280, in wrapper
+    out = func(*args, **kwargs)
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/optim/optimizer.py", line 33, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/optim/adamw.py", line 171, in step
+    adamw(
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/optim/adamw.py", line 321, in adamw
+    func(
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/optim/adamw.py", line 440, in _single_tensor_adamw
+    denom = (exp_avg_sq.sqrt() / bias_correction2_sqrt).add_(eps)
+KeyboardInterrupt

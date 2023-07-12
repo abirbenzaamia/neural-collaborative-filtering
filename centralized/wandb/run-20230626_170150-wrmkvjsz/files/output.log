@@ -1,0 +1,28 @@
+
+----------- Itration 1 -----------
+Iteration 1 [5.7 s]: loss = 0.4547
+----------- Itration 2 -----------
+Iteration 2 [5.0 s]: loss = 0.4201
+----------- Itration 3 -----------
+Traceback (most recent call last):
+  File "mlp.py", line 190, in <module>
+    hist = model.fit([np.array(user_input), np.array(item_input)], #input
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 64, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/keras/engine/training.py", line 1409, in fit
+    tmp_logs = self.train_function(iterator)
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/tensorflow/python/eager/def_function.py", line 915, in __call__
+    result = self._call(*args, **kwds)
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/tensorflow/python/eager/def_function.py", line 947, in _call
+    return self._stateless_fn(*args, **kwds)  # pylint: disable=not-callable
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/tensorflow/python/eager/function.py", line 2453, in __call__
+    return graph_function._call_flat(
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/tensorflow/python/eager/function.py", line 1860, in _call_flat
+    return self._build_call_outputs(self._inference_function.call(
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/tensorflow/python/eager/function.py", line 497, in call
+    outputs = execute.execute(
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/tensorflow/python/eager/execute.py", line 54, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+KeyboardInterrupt

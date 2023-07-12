@@ -1,0 +1,60 @@
+
+
+
+
+epoch: 10, loss: 0.69, time: 0.70:   2%|▍               | 10/400 [00:06<04:47,  1.36it/s]
+
+
+
+
+epoch: 21, loss: 0.68, time: 0.81:   5%|▊               | 21/400 [00:15<05:09,  1.22it/s]
+
+
+
+epoch: 30, loss: 0.67, time: 0.67:   8%|█▏              | 30/400 [00:21<04:42,  1.31it/s]
+
+
+
+epoch: 39, loss: 0.67, time: 0.90:  10%|█▌              | 39/400 [00:27<04:17,  1.40it/s]
+
+
+
+
+epoch: 50, loss: 0.66, time: 0.67:  12%|██              | 50/400 [00:35<04:22,  1.33it/s]
+
+
+
+
+epoch: 61, loss: 0.65, time: 0.67:  15%|██▍             | 61/400 [00:43<04:18,  1.31it/s]
+
+
+
+epoch: 71, loss: 0.64, time: 0.51:  18%|██▊             | 71/400 [00:49<03:39,  1.50it/s]
+
+epoch: 75, loss: 0.64, time: 0.64:  19%|███             | 75/400 [00:52<03:47,  1.43it/s]
+Traceback (most recent call last):
+  File "src/main.py", line 93, in <module>
+    main()
+  File "src/main.py", line 74, in main
+    trained_model = run_server(dataset, num_clients=args.c, epochs=args.epochs,
+  File "/home/abenzaamia/MLP/federated/src/server.py", line 39, in run_server
+    trained_weights = training_process(server_model, clients, num_clients, epochs, local_epochs, dataset, args)
+  File "/home/abenzaamia/MLP/federated/src/fedmlp/train.py", line 66, in training_process
+    w, loss = single_train_round(server_model, clients, local_epochs)
+  File "/home/abenzaamia/MLP/federated/src/fedmlp/train.py", line 112, in single_train_round
+    weights, loss = client.train(server_model_copy, local_epochs)
+  File "/home/abenzaamia/MLP/federated/src/client.py", line 46, in train
+    for _, (u, i, l) in enumerate(dataloader):
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 677, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/utils/data/dataset.py", line 196, in __getitem__
+    return tuple(tensor[index] for tensor in self.tensors)
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/utils/data/dataset.py", line 196, in <genexpr>
+    return tuple(tensor[index] for tensor in self.tensors)
+KeyboardInterrupt

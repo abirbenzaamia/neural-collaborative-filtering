@@ -1,0 +1,75 @@
+
+
+
+
+
+epoch: 11, loss: 0.66, time: 0.75:   3%|▋                         | 11/400 [00:09<04:55,  1.31it/s]
+
+
+
+
+epoch: 20, loss: 0.66, time: 1.07:   5%|█▎                        | 20/400 [00:17<06:35,  1.04s/it]
+
+
+
+
+epoch: 30, loss: 0.65, time: 0.61:   8%|█▉                        | 30/400 [00:25<04:46,  1.29it/s]
+
+
+
+
+epoch: 40, loss: 0.64, time: 0.52:  10%|██▌                       | 40/400 [00:33<04:38,  1.29it/s]
+
+
+
+
+epoch: 50, loss: 0.64, time: 1.12:  12%|███▏                      | 49/400 [00:41<04:50,  1.21it/s]
+
+
+
+
+epoch: 60, loss: 0.63, time: 0.60:  15%|███▊                      | 59/400 [00:49<04:17,  1.32it/s]
+
+
+
+
+
+epoch: 72, loss: 0.62, time: 0.92:  18%|████▋                     | 72/400 [00:59<04:22,  1.25it/s]
+
+
+
+
+epoch: 81, loss: 0.62, time: 1.08:  20%|█████▎                    | 81/400 [01:07<05:23,  1.01s/it]
+
+
+
+
+epoch: 90, loss: 0.62, time: 0.61:  22%|█████▊                    | 90/400 [01:15<04:09,  1.24it/s]
+
+
+
+
+epoch: 100, loss: 0.61, time: 0.64:  25%|██████▏                  | 99/400 [01:23<04:17,  1.17it/s]
+
+
+
+
+epoch: 110, loss: 0.61, time: 1.00:  27%|██████▌                 | 109/400 [01:31<03:38,  1.33it/s]
+
+epoch: 113, loss: 0.61, time: 0.80:  28%|██████▊                 | 113/400 [01:35<04:01,  1.19it/s]
+Traceback (most recent call last):
+  File "src/main.py", line 93, in <module>
+    main()
+  File "src/main.py", line 74, in main
+    trained_model = run_server(dataset, num_clients=args.c, epochs=args.epochs,
+  File "/home/abenzaamia/MLP/federated/src/server.py", line 39, in run_server
+    trained_weights = training_process(server_model, clients, num_clients, epochs, local_epochs, dataset, args)
+  File "/home/abenzaamia/MLP/federated/src/fedmlp/train.py", line 66, in training_process
+    w, loss = single_train_round(server_model, clients, local_epochs)
+  File "/home/abenzaamia/MLP/federated/src/fedmlp/train.py", line 112, in single_train_round
+    weights, loss = client.train(server_model_copy, local_epochs)
+  File "/home/abenzaamia/MLP/federated/src/client.py", line 50, in train
+    torch.nn.utils.clip_grad_norm_(server_model.parameters(), 0.5)
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/nn/utils/clip_grad.py", line 55, in clip_grad_norm_
+    norms.extend(torch._foreach_norm(grads, norm_type))
+KeyboardInterrupt

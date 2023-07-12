@@ -1,0 +1,34 @@
+
+----------- Itration 1 -----------
+Iteration 1 [180.9 s]: loss = 0.3374
+----------- Itration 2 -----------
+Iteration 2 [182.1 s]: loss = 0.3043
+----------- Itration 3 -----------
+Iteration 3 [182.0 s]: loss = 0.2813
+----------- Itration 4 -----------
+Iteration 4 [184.2 s]: loss = 0.2559
+----------- Itration 5 -----------
+Iteration 5 [183.6 s]: loss = 0.2306
+----------- Itration 6 -----------
+Iteration 6 [184.9 s]: loss = 0.2069
+----------- Itration 7 -----------
+Iteration 7 [185.1 s]: loss = 0.1851
+----------- Itration 8 -----------
+Iteration 8 [185.6 s]: loss = 0.1659
+----------- Itration 9 -----------
+Iteration 9 [188.5 s]: loss = 0.1492
+----------- Itration 10 -----------
+Iteration 10 [188.5 s]: loss = 0.1342
+Traceback (most recent call last):
+  File "neucf.py", line 216, in <module>
+    model.save_weights(model_out_file, overwrite=True)
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/h5py/_hl/files.py", line 567, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/h5py/_hl/files.py", line 237, in make_fid
+    fid = h5f.create(name, h5f.ACC_TRUNC, fapl=fapl, fcpl=fcpl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 126, in h5py.h5f.create
+FileNotFoundError: [Errno 2] Unable to create file (unable to open file: name = 'pretrained/amazon/grocery/grocery_MLP_[64,32,16,8].h5', errno = 2, error message = 'No such file or directory', flags = 13, o_flags = 242)

@@ -1,0 +1,9 @@
+
+
+epoch: 1, loss: 0.72, time: 12.82:   0%|                                   | 1/400 [00:15<1:44:31, 15.72s/it]
+Traceback (most recent call last):
+  File "src/main.py", line 93, in <module>
+    main()
+  File "src/main.py", line 74, in main
+    trained_model = run_server(dataset, num_clients=args.c, epochs=args.epochs,
+  File "/home/abenzaamia/NeuCF/federated/src/server.py", line 39, in run_server

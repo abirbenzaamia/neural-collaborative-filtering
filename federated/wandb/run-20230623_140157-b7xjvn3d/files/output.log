@@ -1,0 +1,96 @@
+
+
+
+
+
+epoch: 11, loss: 0.64, time: 0.72:   3%|▋                        | 11/400 [00:09<04:52,  1.33it/s]
+
+
+
+
+epoch: 20, loss: 0.63, time: 0.57:   5%|█▎                       | 20/400 [00:17<05:35,  1.13it/s]
+
+
+
+
+
+epoch: 31, loss: 0.63, time: 0.72:   8%|█▉                       | 31/400 [00:27<05:29,  1.12it/s]
+
+
+
+
+epoch: 41, loss: 0.62, time: 0.70:  10%|██▌                      | 41/400 [00:35<04:33,  1.31it/s]
+
+
+
+
+epoch: 51, loss: 0.62, time: 0.69:  13%|███▏                     | 51/400 [00:44<04:48,  1.21it/s]
+
+
+
+
+epoch: 60, loss: 0.62, time: 0.90:  15%|███▋                     | 59/400 [00:52<04:54,  1.16it/s]
+
+
+
+
+
+epoch: 72, loss: 0.61, time: 0.77:  18%|████▌                    | 72/400 [01:02<04:02,  1.35it/s]
+
+
+
+
+epoch: 81, loss: 0.61, time: 0.57:  20%|█████                    | 81/400 [01:10<04:24,  1.21it/s]
+
+
+
+
+epoch: 90, loss: 0.60, time: 0.58:  22%|█████▋                   | 90/400 [01:18<04:38,  1.11it/s]
+
+
+
+
+
+epoch: 102, loss: 0.60, time: 0.72:  26%|█████▊                 | 102/400 [01:28<03:39,  1.36it/s]
+
+
+
+
+epoch: 111, loss: 0.59, time: 0.44:  28%|██████▍                | 111/400 [01:35<04:02,  1.19it/s]
+
+
+
+
+epoch: 120, loss: 0.59, time: 0.81:  30%|██████▉                | 120/400 [01:43<04:34,  1.02it/s]
+
+
+
+
+
+epoch: 132, loss: 0.59, time: 0.60:  33%|███████▌               | 132/400 [01:53<03:12,  1.39it/s]
+
+
+
+
+epoch: 142, loss: 0.58, time: 0.56:  36%|████████▏              | 142/400 [02:02<03:23,  1.27it/s]
+epoch: 143, loss: 0.59, time: 0.78:  36%|████████▏              | 143/400 [02:03<03:41,  1.16it/s]
+Traceback (most recent call last):
+  File "src/main.py", line 93, in <module>
+    main()
+  File "src/main.py", line 74, in main
+    trained_model = run_server(dataset, num_clients=args.c, epochs=args.epochs,
+  File "/home/abenzaamia/MLP/federated/src/server.py", line 39, in run_server
+    trained_weights = training_process(server_model, clients, num_clients, epochs, local_epochs, dataset, args)
+  File "/home/abenzaamia/MLP/federated/src/fedmlp/train.py", line 66, in training_process
+    w, loss = single_train_round(server_model, clients, local_epochs)
+  File "/home/abenzaamia/MLP/federated/src/fedmlp/train.py", line 112, in single_train_round
+    weights, loss = client.train(server_model_copy, local_epochs)
+  File "/home/abenzaamia/MLP/federated/src/client.py", line 46, in train
+    for _, (u, i, l) in enumerate(dataloader):
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 646, in __next__
+    return data
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/autograd/profiler.py", line 507, in __exit__
+    torch.ops.profiler._record_function_exit._RecordFunction(record)
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/_ops.py", line 287, in __call__
+    return self._op(*args, **kwargs or {})
+KeyboardInterrupt

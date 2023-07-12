@@ -1,0 +1,52 @@
+
+
+
+epoch: 3, loss: 0.66, time: 4.10:   1%|               | 3/400 [00:12<27:55,  4.22s/it]
+Traceback (most recent call last):
+  File "src/main.py", line 91, in <module>
+    main()
+  File "src/main.py", line 72, in main
+    trained_model = run_server(dataset, num_clients=args.c, epochs=args.epochs,
+  File "/home/abenzaamia/MLP/federated/src/server.py", line 39, in run_server
+    trained_weights = training_process(server_model, clients, num_clients, epochs, local_epochs, dataset, args)
+  File "/home/abenzaamia/MLP/federated/src/fedmlp/train.py", line 66, in training_process
+    w, loss = single_train_round(server_model, clients, local_epochs)
+  File "/home/abenzaamia/MLP/federated/src/fedmlp/train.py", line 110, in single_train_round
+    server_model_copy = copy.deepcopy(server_model)
+  File "/opt/python38/lib/python3.8/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/opt/python38/lib/python3.8/copy.py", line 270, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/opt/python38/lib/python3.8/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/opt/python38/lib/python3.8/copy.py", line 230, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/opt/python38/lib/python3.8/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/opt/python38/lib/python3.8/copy.py", line 296, in _reconstruct
+    value = deepcopy(value, memo)
+  File "/opt/python38/lib/python3.8/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/opt/python38/lib/python3.8/copy.py", line 270, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/opt/python38/lib/python3.8/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/opt/python38/lib/python3.8/copy.py", line 230, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/opt/python38/lib/python3.8/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/opt/python38/lib/python3.8/copy.py", line 296, in _reconstruct
+    value = deepcopy(value, memo)
+  File "/opt/python38/lib/python3.8/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/opt/python38/lib/python3.8/copy.py", line 270, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/opt/python38/lib/python3.8/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/opt/python38/lib/python3.8/copy.py", line 230, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/opt/python38/lib/python3.8/copy.py", line 177, in deepcopy
+    _keep_alive(x, memo) # Make sure x lives at least as long as d
+  File "/opt/python38/lib/python3.8/copy.py", line 253, in _keep_alive
+    memo[id(memo)].append(x)
+KeyboardInterrupt

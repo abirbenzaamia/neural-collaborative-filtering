@@ -1,0 +1,27 @@
+2023-06-26 17:09:21,534 INFO    MainThread:288963 [wandb_setup.py:_flush():76] Configure stats pid to 288963
+2023-06-26 17:09:21,534 INFO    MainThread:288963 [wandb_setup.py:_flush():76] Loading settings from /home/abenzaamia/.config/wandb/settings
+2023-06-26 17:09:21,534 INFO    MainThread:288963 [wandb_setup.py:_flush():76] Loading settings from /home/abenzaamia/MLP/federated/wandb/settings
+2023-06-26 17:09:21,534 INFO    MainThread:288963 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-06-26 17:09:21,534 INFO    MainThread:288963 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-06-26 17:09:21,534 INFO    MainThread:288963 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'src/main.py', 'program': 'src/main.py'}
+2023-06-26 17:09:21,534 INFO    MainThread:288963 [wandb_init.py:_log_setup():506] Logging user logs to /home/abenzaamia/MLP/federated/wandb/run-20230626_170921-puo98bxa/logs/debug.log
+2023-06-26 17:09:21,535 INFO    MainThread:288963 [wandb_init.py:_log_setup():507] Logging internal logs to /home/abenzaamia/MLP/federated/wandb/run-20230626_170921-puo98bxa/logs/debug-internal.log
+2023-06-26 17:09:21,540 INFO    MainThread:288963 [wandb_init.py:init():546] calling init triggers
+2023-06-26 17:09:21,540 INFO    MainThread:288963 [wandb_init.py:init():552] wandb.init called with sweep_config: {}
+config: {'wandb_entity': None, 'learning_rate': 0.001, 'latent_factors': 16, 'batch_size': 256, 'top_k': 10, 'name': 'FedMLP', 'dataset': 'movielens', 'path': '../../dataset', 'out': './pretrained', 'epochs': 400, 'save': True, 'c': 20, 'l': 3, 'layers': [64, 32, 16, 8], 'validation_steps': 10, 'type': 'ml-100k'}
+2023-06-26 17:09:21,543 INFO    MainThread:288963 [wandb_init.py:init():602] starting backend
+2023-06-26 17:09:21,543 INFO    MainThread:288963 [wandb_init.py:init():606] setting up manager
+2023-06-26 17:09:21,549 INFO    MainThread:288963 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-06-26 17:09:21,555 INFO    MainThread:288963 [wandb_init.py:init():613] backend started and connected
+2023-06-26 17:09:21,591 INFO    MainThread:288963 [wandb_init.py:init():701] updated telemetry
+2023-06-26 17:09:21,592 INFO    MainThread:288963 [wandb_init.py:init():741] communicating run to backend with 60.0 second timeout
+2023-06-26 17:09:22,046 INFO    MainThread:288963 [wandb_run.py:_on_init():2133] communicating current version
+2023-06-26 17:09:22,143 INFO    MainThread:288963 [wandb_run.py:_on_init():2142] got version response upgrade_message: "wandb version 0.15.4 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-06-26 17:09:22,143 INFO    MainThread:288963 [wandb_init.py:init():789] starting run threads in backend
+2023-06-26 17:09:22,230 INFO    MainThread:288963 [wandb_run.py:_console_start():2114] atexit reg
+2023-06-26 17:09:22,235 INFO    MainThread:288963 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-06-26 17:09:22,236 INFO    MainThread:288963 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-06-26 17:09:22,236 INFO    MainThread:288963 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-06-26 17:09:22,236 INFO    MainThread:288963 [wandb_init.py:init():831] run started, returning control to user process
+2023-06-26 17:20:17,891 WARNING MsgRouterThr:288963 [router.py:message_loop():77] message_loop has been closed

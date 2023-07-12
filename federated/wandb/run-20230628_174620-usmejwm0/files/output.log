@@ -1,0 +1,27 @@
+
+
+epoch: 1, loss: 0.64, time: 12.41:   0%|                                         | 1/400 [00:15<1:40:48, 15.16s/it]
+Traceback (most recent call last):
+  File "src/main.py", line 93, in <module>
+    main()
+  File "src/main.py", line 74, in main
+    trained_model = run_server(dataset, num_clients=args.c, epochs=args.epochs,
+  File "/home/abenzaamia/NeuCF/federated/src/server.py", line 39, in run_server
+    trained_weights = training_process(server_model, clients, num_clients, epochs, local_epochs, dataset, args)
+  File "/home/abenzaamia/NeuCF/federated/src/fedmlp/train.py", line 66, in training_process
+    w, loss = single_train_round(server_model, clients, local_epochs)
+  File "/home/abenzaamia/NeuCF/federated/src/fedmlp/train.py", line 112, in single_train_round
+    weights, loss = client.train(server_model_copy, local_epochs)
+  File "/home/abenzaamia/NeuCF/federated/src/client.py", line 51, in train
+    optimizer.step()
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/optim/optimizer.py", line 280, in wrapper
+    out = func(*args, **kwargs)
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/optim/optimizer.py", line 33, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/optim/adamw.py", line 171, in step
+    adamw(
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/optim/adamw.py", line 321, in adamw
+    func(
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/optim/adamw.py", line 566, in _multi_tensor_adamw
+    denom = torch._foreach_add(exp_avg_sq_sqrt, eps)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB (GPU 0; 31.74 GiB total capacity; 28.92 GiB already allocated; 5.12 MiB free; 31.36 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

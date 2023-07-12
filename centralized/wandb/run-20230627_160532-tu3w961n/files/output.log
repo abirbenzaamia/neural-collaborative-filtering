@@ -1,0 +1,151 @@
+
+----------- Itration 1 -----------
+Iteration 1 [1.9 s]: loss = 0.4708
+----------- Itration 2 -----------
+Iteration 2 [1.2 s]: loss = 0.2702
+----------- Itration 3 -----------
+Iteration 3 [1.2 s]: loss = 0.2138
+----------- Itration 4 -----------
+Iteration 4 [1.2 s]: loss = 0.1840
+----------- Itration 5 -----------
+Iteration 5 [1.1 s]: loss = 0.1631
+----------- Itration 6 -----------
+Iteration 6 [1.2 s]: loss = 0.1419
+----------- Itration 7 -----------
+Iteration 7 [1.2 s]: loss = 0.1217
+----------- Itration 8 -----------
+Iteration 8 [1.2 s]: loss = 0.1016
+----------- Itration 9 -----------
+Iteration 9 [1.1 s]: loss = 0.0796
+----------- Itration 10 -----------
+Iteration 10 [1.2 s]: loss = 0.0593
+----------- Itration 11 -----------
+Iteration 11 [1.1 s]: loss = 0.0450
+----------- Itration 12 -----------
+Iteration 12 [1.1 s]: loss = 0.0335
+----------- Itration 13 -----------
+Iteration 13 [1.1 s]: loss = 0.0247
+----------- Itration 14 -----------
+Iteration 14 [1.1 s]: loss = 0.0185
+----------- Itration 15 -----------
+Iteration 15 [1.1 s]: loss = 0.0136
+----------- Itration 16 -----------
+Iteration 16 [1.1 s]: loss = 0.0101
+----------- Itration 17 -----------
+Iteration 17 [1.2 s]: loss = 0.0081
+----------- Itration 18 -----------
+Iteration 18 [1.2 s]: loss = 0.0065
+----------- Itration 19 -----------
+Iteration 19 [1.2 s]: loss = 0.0073
+----------- Itration 20 -----------
+Iteration 20 [1.2 s]: loss = 0.0068
+----------- Itration 21 -----------
+Iteration 21 [1.2 s]: loss = 0.0072
+----------- Itration 22 -----------
+Iteration 22 [1.2 s]: loss = 0.0057
+----------- Itration 23 -----------
+Iteration 23 [1.2 s]: loss = 0.0054
+----------- Itration 24 -----------
+Iteration 24 [1.2 s]: loss = 0.0039
+----------- Itration 25 -----------
+Iteration 25 [1.2 s]: loss = 0.0034
+----------- Itration 26 -----------
+Iteration 26 [1.2 s]: loss = 0.0025
+----------- Itration 27 -----------
+Iteration 27 [1.1 s]: loss = 0.0022
+----------- Itration 28 -----------
+Iteration 28 [1.1 s]: loss = 0.0034
+----------- Itration 29 -----------
+Iteration 29 [1.1 s]: loss = 0.0037
+----------- Itration 30 -----------
+Iteration 30 [1.1 s]: loss = 0.0041
+----------- Itration 31 -----------
+Iteration 31 [1.1 s]: loss = 0.0036
+----------- Itration 32 -----------
+Iteration 32 [1.1 s]: loss = 0.0033
+----------- Itration 33 -----------
+Iteration 33 [1.1 s]: loss = 0.0030
+----------- Itration 34 -----------
+Iteration 34 [1.1 s]: loss = 0.0031
+----------- Itration 35 -----------
+Iteration 35 [1.1 s]: loss = 0.0019
+----------- Itration 36 -----------
+Iteration 36 [1.1 s]: loss = 0.0016
+----------- Itration 37 -----------
+Iteration 37 [1.1 s]: loss = 0.0011
+----------- Itration 38 -----------
+Iteration 38 [1.1 s]: loss = 0.0010
+----------- Itration 39 -----------
+Iteration 39 [1.1 s]: loss = 0.0011
+----------- Itration 40 -----------
+Iteration 40 [1.1 s]: loss = 0.0017
+----------- Itration 41 -----------
+Iteration 41 [1.1 s]: loss = 0.0011
+----------- Itration 42 -----------
+Iteration 42 [1.1 s]: loss = 0.0011
+----------- Itration 43 -----------
+Iteration 43 [1.1 s]: loss = 0.0022
+----------- Itration 44 -----------
+Iteration 44 [1.1 s]: loss = 0.0015
+----------- Itration 45 -----------
+Iteration 45 [1.2 s]: loss = 0.0020
+----------- Itration 46 -----------
+Iteration 46 [1.1 s]: loss = 0.0015
+----------- Itration 47 -----------
+Iteration 47 [1.1 s]: loss = 0.0011
+----------- Itration 48 -----------
+Iteration 48 [1.1 s]: loss = 0.0011
+----------- Itration 49 -----------
+Iteration 49 [1.2 s]: loss = 0.0011
+----------- Itration 50 -----------
+Iteration 50 [1.1 s]: loss = 0.0005
+----------- Itration 51 -----------
+Iteration 51 [1.0 s]: loss = 0.0010
+----------- Itration 52 -----------
+Iteration 52 [1.0 s]: loss = 0.0005
+----------- Itration 53 -----------
+Iteration 53 [1.1 s]: loss = 0.0005
+----------- Itration 54 -----------
+Iteration 54 [1.1 s]: loss = 0.0003
+----------- Itration 55 -----------
+Iteration 55 [1.1 s]: loss = 0.0003
+----------- Itration 56 -----------
+Iteration 56 [1.0 s]: loss = 0.0006
+----------- Itration 57 -----------
+Iteration 57 [1.1 s]: loss = 0.0006
+----------- Itration 58 -----------
+Iteration 58 [1.1 s]: loss = 0.0009
+----------- Itration 59 -----------
+Iteration 59 [1.1 s]: loss = 0.0017
+----------- Itration 60 -----------
+Iteration 60 [1.0 s]: loss = 0.0025
+----------- Itration 61 -----------
+Iteration 61 [1.1 s]: loss = 0.0022
+----------- Itration 62 -----------
+Iteration 62 [1.2 s]: loss = 0.0019
+----------- Itration 63 -----------
+Iteration 63 [1.1 s]: loss = 0.0010
+----------- Itration 64 -----------
+Iteration 64 [1.1 s]: loss = 0.0005
+----------- Itration 65 -----------
+Iteration 65 [1.2 s]: loss = 0.0004
+----------- Itration 66 -----------
+Iteration 66 [1.2 s]: loss = 0.0002
+----------- Itration 67 -----------
+Iteration 67 [1.2 s]: loss = 0.0002
+----------- Itration 68 -----------
+Iteration 68 [1.2 s]: loss = 0.0001
+----------- Itration 69 -----------
+Iteration 69 [1.2 s]: loss = 0.0000
+----------- Itration 70 -----------
+Iteration 70 [1.2 s]: loss = 0.0000
+Traceback (most recent call last):
+  File "neucf.py", line 200, in <module>
+    (hits, ndcgs, apks, arks) = evaluate_model(model, testRatings, testNegatives, topK, evaluation_threads)
+  File "/home/abenzaamia/NeuCF/centralized/eval.py", line 162, in evaluate_model
+    (hr,ndcg, apk, ark) = eval_one_rating(idx)
+  File "/home/abenzaamia/NeuCF/centralized/eval.py", line 180, in eval_one_rating
+    predictions = _model.predict([users, np.array(items)], verbose=0)
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 64, in error_handler
+    return fn(*args, **kwargs)
+KeyboardInterrupt

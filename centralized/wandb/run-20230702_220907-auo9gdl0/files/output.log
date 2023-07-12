@@ -1,0 +1,803 @@
+
+----------- Itration 1 -----------
+Iteration 1 [2.5 s]: loss = 0.4740
+----------- Itration 2 -----------
+Iteration 2 [1.9 s]: loss = 0.4186
+----------- Itration 3 -----------
+Iteration 3 [1.9 s]: loss = 0.4037
+----------- Itration 4 -----------
+Iteration 4 [1.9 s]: loss = 0.3808
+----------- Itration 5 -----------
+Iteration 5 [1.9 s]: loss = 0.3492
+----------- Itration 6 -----------
+Iteration 6 [1.9 s]: loss = 0.3100
+----------- Itration 7 -----------
+Iteration 7 [1.9 s]: loss = 0.2613
+----------- Itration 8 -----------
+Iteration 8 [1.9 s]: loss = 0.2107
+----------- Itration 9 -----------
+Iteration 9 [1.9 s]: loss = 0.1678
+----------- Itration 10 -----------
+Iteration 10 [1.9 s]: loss = 0.1340
+----------- Itration 11 -----------
+Iteration 11 [1.8 s]: loss = 0.1094
+----------- Itration 12 -----------
+Iteration 12 [1.8 s]: loss = 0.0906
+----------- Itration 13 -----------
+Iteration 13 [1.8 s]: loss = 0.0761
+----------- Itration 14 -----------
+Iteration 14 [1.8 s]: loss = 0.0646
+----------- Itration 15 -----------
+Iteration 15 [1.9 s]: loss = 0.0564
+----------- Itration 16 -----------
+Iteration 16 [1.9 s]: loss = 0.0493
+----------- Itration 17 -----------
+Iteration 17 [1.9 s]: loss = 0.0427
+----------- Itration 18 -----------
+Iteration 18 [1.9 s]: loss = 0.0388
+----------- Itration 19 -----------
+Iteration 19 [1.9 s]: loss = 0.0338
+----------- Itration 20 -----------
+Iteration 20 [2.0 s]: loss = 0.0315
+----------- Itration 21 -----------
+Iteration 21 [1.9 s]: loss = 0.0274
+----------- Itration 22 -----------
+Iteration 22 [1.9 s]: loss = 0.0247
+----------- Itration 23 -----------
+Iteration 23 [1.8 s]: loss = 0.0226
+----------- Itration 24 -----------
+Iteration 24 [1.9 s]: loss = 0.0189
+----------- Itration 25 -----------
+Iteration 25 [1.9 s]: loss = 0.0193
+----------- Itration 26 -----------
+Iteration 26 [1.8 s]: loss = 0.0181
+----------- Itration 27 -----------
+Iteration 27 [1.8 s]: loss = 0.0163
+----------- Itration 28 -----------
+Iteration 28 [1.9 s]: loss = 0.0160
+----------- Itration 29 -----------
+Iteration 29 [1.9 s]: loss = 0.0137
+----------- Itration 30 -----------
+Iteration 30 [1.9 s]: loss = 0.0120
+----------- Itration 31 -----------
+Iteration 31 [1.9 s]: loss = 0.0108
+----------- Itration 32 -----------
+Iteration 32 [1.8 s]: loss = 0.0100
+----------- Itration 33 -----------
+Iteration 33 [1.8 s]: loss = 0.0100
+----------- Itration 34 -----------
+Iteration 34 [1.8 s]: loss = 0.0109
+----------- Itration 35 -----------
+Iteration 35 [1.8 s]: loss = 0.0111
+----------- Itration 36 -----------
+Iteration 36 [1.8 s]: loss = 0.0089
+----------- Itration 37 -----------
+Iteration 37 [1.8 s]: loss = 0.0078
+----------- Itration 38 -----------
+Iteration 38 [1.8 s]: loss = 0.0079
+----------- Itration 39 -----------
+Iteration 39 [1.8 s]: loss = 0.0069
+----------- Itration 40 -----------
+Iteration 40 [1.8 s]: loss = 0.0072
+----------- Itration 41 -----------
+Iteration 41 [1.9 s]: loss = 0.0068
+----------- Itration 42 -----------
+Iteration 42 [1.8 s]: loss = 0.0075
+----------- Itration 43 -----------
+Iteration 43 [1.8 s]: loss = 0.0064
+----------- Itration 44 -----------
+Iteration 44 [1.8 s]: loss = 0.0053
+----------- Itration 45 -----------
+Iteration 45 [1.8 s]: loss = 0.0069
+----------- Itration 46 -----------
+Iteration 46 [1.8 s]: loss = 0.0064
+----------- Itration 47 -----------
+Iteration 47 [1.8 s]: loss = 0.0061
+----------- Itration 48 -----------
+Iteration 48 [1.8 s]: loss = 0.0052
+----------- Itration 49 -----------
+Iteration 49 [1.8 s]: loss = 0.0052
+----------- Itration 50 -----------
+Iteration 50 [1.9 s]: loss = 0.0053
+----------- Itration 51 -----------
+Iteration 51 [1.9 s]: loss = 0.0038
+----------- Itration 52 -----------
+Iteration 52 [1.9 s]: loss = 0.0034
+----------- Itration 53 -----------
+Iteration 53 [2.0 s]: loss = 0.0035
+----------- Itration 54 -----------
+Iteration 54 [1.9 s]: loss = 0.0045
+----------- Itration 55 -----------
+Iteration 55 [1.8 s]: loss = 0.0040
+----------- Itration 56 -----------
+Iteration 56 [1.8 s]: loss = 0.0045
+----------- Itration 57 -----------
+Iteration 57 [1.8 s]: loss = 0.0041
+----------- Itration 58 -----------
+Iteration 58 [1.9 s]: loss = 0.0033
+----------- Itration 59 -----------
+Iteration 59 [1.9 s]: loss = 0.0032
+----------- Itration 60 -----------
+Iteration 60 [1.9 s]: loss = 0.0039
+----------- Itration 61 -----------
+Iteration 61 [2.0 s]: loss = 0.0044
+----------- Itration 62 -----------
+Iteration 62 [1.9 s]: loss = 0.0030
+----------- Itration 63 -----------
+Iteration 63 [1.9 s]: loss = 0.0031
+----------- Itration 64 -----------
+Iteration 64 [1.9 s]: loss = 0.0031
+----------- Itration 65 -----------
+Iteration 65 [1.9 s]: loss = 0.0033
+----------- Itration 66 -----------
+Iteration 66 [1.9 s]: loss = 0.0030
+----------- Itration 67 -----------
+Iteration 67 [1.9 s]: loss = 0.0030
+----------- Itration 68 -----------
+Iteration 68 [1.8 s]: loss = 0.0026
+----------- Itration 69 -----------
+Iteration 69 [1.8 s]: loss = 0.0026
+----------- Itration 70 -----------
+Iteration 70 [1.9 s]: loss = 0.0023
+----------- Itration 71 -----------
+Iteration 71 [1.9 s]: loss = 0.0020
+----------- Itration 72 -----------
+Iteration 72 [1.9 s]: loss = 0.0025
+----------- Itration 73 -----------
+Iteration 73 [1.9 s]: loss = 0.0037
+----------- Itration 74 -----------
+Iteration 74 [1.9 s]: loss = 0.0031
+----------- Itration 75 -----------
+Iteration 75 [1.9 s]: loss = 0.0026
+----------- Itration 76 -----------
+Iteration 76 [1.9 s]: loss = 0.0022
+----------- Itration 77 -----------
+Iteration 77 [1.9 s]: loss = 0.0020
+----------- Itration 78 -----------
+Iteration 78 [1.9 s]: loss = 0.0021
+----------- Itration 79 -----------
+Iteration 79 [1.9 s]: loss = 0.0033
+----------- Itration 80 -----------
+Iteration 80 [1.9 s]: loss = 0.0026
+----------- Itration 81 -----------
+Iteration 81 [1.9 s]: loss = 0.0029
+----------- Itration 82 -----------
+Iteration 82 [1.9 s]: loss = 0.0021
+----------- Itration 83 -----------
+Iteration 83 [1.9 s]: loss = 0.0017
+----------- Itration 84 -----------
+Iteration 84 [1.9 s]: loss = 0.0013
+----------- Itration 85 -----------
+Iteration 85 [1.9 s]: loss = 0.0012
+----------- Itration 86 -----------
+Iteration 86 [1.9 s]: loss = 0.0021
+----------- Itration 87 -----------
+Iteration 87 [1.9 s]: loss = 0.0029
+----------- Itration 88 -----------
+Iteration 88 [1.9 s]: loss = 0.0019
+----------- Itration 89 -----------
+Iteration 89 [1.9 s]: loss = 0.0021
+----------- Itration 90 -----------
+Iteration 90 [1.9 s]: loss = 0.0018
+----------- Itration 91 -----------
+Iteration 91 [1.9 s]: loss = 0.0016
+----------- Itration 92 -----------
+Iteration 92 [1.9 s]: loss = 0.0021
+----------- Itration 93 -----------
+Iteration 93 [2.0 s]: loss = 0.0018
+----------- Itration 94 -----------
+Iteration 94 [2.0 s]: loss = 0.0021
+----------- Itration 95 -----------
+Iteration 95 [1.9 s]: loss = 0.0010
+----------- Itration 96 -----------
+Iteration 96 [1.9 s]: loss = 0.0015
+----------- Itration 97 -----------
+Iteration 97 [1.9 s]: loss = 0.0017
+----------- Itration 98 -----------
+Iteration 98 [1.9 s]: loss = 0.0032
+----------- Itration 99 -----------
+Iteration 99 [1.9 s]: loss = 0.0032
+----------- Itration 100 -----------
+Iteration 100 [1.9 s]: loss = 0.0022
+----------- Itration 101 -----------
+Iteration 101 [1.9 s]: loss = 0.0013
+----------- Itration 102 -----------
+Iteration 102 [2.0 s]: loss = 0.0010
+----------- Itration 103 -----------
+Iteration 103 [2.0 s]: loss = 0.0010
+----------- Itration 104 -----------
+Iteration 104 [1.9 s]: loss = 0.0005
+----------- Itration 105 -----------
+Iteration 105 [2.0 s]: loss = 0.0015
+----------- Itration 106 -----------
+Iteration 106 [1.9 s]: loss = 0.0020
+----------- Itration 107 -----------
+Iteration 107 [1.9 s]: loss = 0.0017
+----------- Itration 108 -----------
+Iteration 108 [2.0 s]: loss = 0.0019
+----------- Itration 109 -----------
+Iteration 109 [1.9 s]: loss = 0.0020
+----------- Itration 110 -----------
+Iteration 110 [1.9 s]: loss = 0.0015
+----------- Itration 111 -----------
+Iteration 111 [1.9 s]: loss = 0.0014
+----------- Itration 112 -----------
+Iteration 112 [2.0 s]: loss = 0.0009
+----------- Itration 113 -----------
+Iteration 113 [1.9 s]: loss = 0.0003
+----------- Itration 114 -----------
+Iteration 114 [2.0 s]: loss = 0.0009
+----------- Itration 115 -----------
+Iteration 115 [1.9 s]: loss = 0.0025
+----------- Itration 116 -----------
+Iteration 116 [1.9 s]: loss = 0.0013
+----------- Itration 117 -----------
+Iteration 117 [1.9 s]: loss = 0.0012
+----------- Itration 118 -----------
+Iteration 118 [1.9 s]: loss = 0.0011
+----------- Itration 119 -----------
+Iteration 119 [2.0 s]: loss = 0.0011
+----------- Itration 120 -----------
+Iteration 120 [2.0 s]: loss = 0.0012
+----------- Itration 121 -----------
+Iteration 121 [1.9 s]: loss = 0.0011
+----------- Itration 122 -----------
+Iteration 122 [1.9 s]: loss = 0.0012
+----------- Itration 123 -----------
+Iteration 123 [1.9 s]: loss = 0.0009
+----------- Itration 124 -----------
+Iteration 124 [1.9 s]: loss = 0.0011
+----------- Itration 125 -----------
+Iteration 125 [1.9 s]: loss = 0.0013
+----------- Itration 126 -----------
+Iteration 126 [2.0 s]: loss = 0.0010
+----------- Itration 127 -----------
+Iteration 127 [1.9 s]: loss = 0.0006
+----------- Itration 128 -----------
+Iteration 128 [1.9 s]: loss = 0.0008
+----------- Itration 129 -----------
+Iteration 129 [1.9 s]: loss = 0.0009
+----------- Itration 130 -----------
+Iteration 130 [1.9 s]: loss = 0.0014
+----------- Itration 131 -----------
+Iteration 131 [2.0 s]: loss = 0.0008
+----------- Itration 132 -----------
+Iteration 132 [1.9 s]: loss = 0.0012
+----------- Itration 133 -----------
+Iteration 133 [1.9 s]: loss = 0.0012
+----------- Itration 134 -----------
+Iteration 134 [1.9 s]: loss = 0.0008
+----------- Itration 135 -----------
+Iteration 135 [1.9 s]: loss = 0.0010
+----------- Itration 136 -----------
+Iteration 136 [1.9 s]: loss = 0.0006
+----------- Itration 137 -----------
+Iteration 137 [1.9 s]: loss = 0.0010
+----------- Itration 138 -----------
+Iteration 138 [1.9 s]: loss = 0.0010
+----------- Itration 139 -----------
+Iteration 139 [1.9 s]: loss = 0.0008
+----------- Itration 140 -----------
+Iteration 140 [1.9 s]: loss = 0.0009
+----------- Itration 141 -----------
+Iteration 141 [1.9 s]: loss = 0.0008
+----------- Itration 142 -----------
+Iteration 142 [1.9 s]: loss = 0.0011
+----------- Itration 143 -----------
+Iteration 143 [1.9 s]: loss = 0.0010
+----------- Itration 144 -----------
+Iteration 144 [1.9 s]: loss = 0.0007
+----------- Itration 145 -----------
+Iteration 145 [1.9 s]: loss = 0.0007
+----------- Itration 146 -----------
+Iteration 146 [1.9 s]: loss = 0.0009
+----------- Itration 147 -----------
+Iteration 147 [2.0 s]: loss = 0.0007
+----------- Itration 148 -----------
+Iteration 148 [1.9 s]: loss = 0.0008
+----------- Itration 149 -----------
+Iteration 149 [1.9 s]: loss = 0.0011
+----------- Itration 150 -----------
+Iteration 150 [1.9 s]: loss = 0.0008
+----------- Itration 151 -----------
+Iteration 151 [1.9 s]: loss = 0.0008
+----------- Itration 152 -----------
+Iteration 152 [1.9 s]: loss = 0.0010
+----------- Itration 153 -----------
+Iteration 153 [1.9 s]: loss = 0.0007
+----------- Itration 154 -----------
+Iteration 154 [1.9 s]: loss = 0.0005
+----------- Itration 155 -----------
+Iteration 155 [1.9 s]: loss = 0.0001
+----------- Itration 156 -----------
+Iteration 156 [1.9 s]: loss = 0.0003
+----------- Itration 157 -----------
+Iteration 157 [1.9 s]: loss = 0.0010
+----------- Itration 158 -----------
+Iteration 158 [1.9 s]: loss = 0.0015
+----------- Itration 159 -----------
+Iteration 159 [1.9 s]: loss = 0.0016
+----------- Itration 160 -----------
+Iteration 160 [1.9 s]: loss = 0.0004
+----------- Itration 161 -----------
+Iteration 161 [1.9 s]: loss = 0.0002
+----------- Itration 162 -----------
+Iteration 162 [1.9 s]: loss = 0.0006
+----------- Itration 163 -----------
+Iteration 163 [1.9 s]: loss = 0.0006
+----------- Itration 164 -----------
+Iteration 164 [1.9 s]: loss = 0.0006
+----------- Itration 165 -----------
+Iteration 165 [1.9 s]: loss = 0.0008
+----------- Itration 166 -----------
+Iteration 166 [1.9 s]: loss = 0.0011
+----------- Itration 167 -----------
+Iteration 167 [1.9 s]: loss = 0.0010
+----------- Itration 168 -----------
+Iteration 168 [2.0 s]: loss = 0.0009
+----------- Itration 169 -----------
+Iteration 169 [1.9 s]: loss = 0.0009
+----------- Itration 170 -----------
+Iteration 170 [1.9 s]: loss = 0.0003
+----------- Itration 171 -----------
+Iteration 171 [1.9 s]: loss = 0.0003
+----------- Itration 172 -----------
+Iteration 172 [1.8 s]: loss = 0.0009
+----------- Itration 173 -----------
+Iteration 173 [1.8 s]: loss = 0.0006
+----------- Itration 174 -----------
+Iteration 174 [1.9 s]: loss = 0.0004
+----------- Itration 175 -----------
+Iteration 175 [1.9 s]: loss = 0.0004
+----------- Itration 176 -----------
+Iteration 176 [1.9 s]: loss = 0.0006
+----------- Itration 177 -----------
+Iteration 177 [1.9 s]: loss = 0.0008
+----------- Itration 178 -----------
+Iteration 178 [1.9 s]: loss = 0.0006
+----------- Itration 179 -----------
+Iteration 179 [1.9 s]: loss = 0.0009
+----------- Itration 180 -----------
+Iteration 180 [1.9 s]: loss = 0.0006
+----------- Itration 181 -----------
+Iteration 181 [1.8 s]: loss = 0.0003
+----------- Itration 182 -----------
+Iteration 182 [1.9 s]: loss = 0.0007
+----------- Itration 183 -----------
+Iteration 183 [1.8 s]: loss = 0.0006
+----------- Itration 184 -----------
+Iteration 184 [1.8 s]: loss = 0.0009
+----------- Itration 185 -----------
+Iteration 185 [1.9 s]: loss = 0.0008
+----------- Itration 186 -----------
+Iteration 186 [1.9 s]: loss = 0.0003
+----------- Itration 187 -----------
+Iteration 187 [1.9 s]: loss = 0.0002
+----------- Itration 188 -----------
+Iteration 188 [1.9 s]: loss = 0.0001
+----------- Itration 189 -----------
+Iteration 189 [2.0 s]: loss = 0.0012
+----------- Itration 190 -----------
+Iteration 190 [1.9 s]: loss = 0.0012
+----------- Itration 191 -----------
+Iteration 191 [1.8 s]: loss = 0.0005
+----------- Itration 192 -----------
+Iteration 192 [1.7 s]: loss = 0.0001
+----------- Itration 193 -----------
+Iteration 193 [1.8 s]: loss = 0.0000
+----------- Itration 194 -----------
+Iteration 194 [1.8 s]: loss = 0.0000
+----------- Itration 195 -----------
+Iteration 195 [1.8 s]: loss = 0.0000
+----------- Itration 196 -----------
+Iteration 196 [1.7 s]: loss = 0.0000
+----------- Itration 197 -----------
+Iteration 197 [1.9 s]: loss = 0.0000
+----------- Itration 198 -----------
+Iteration 198 [1.9 s]: loss = 0.0000
+----------- Itration 199 -----------
+Iteration 199 [1.8 s]: loss = 0.0000
+----------- Itration 200 -----------
+Iteration 200 [1.8 s]: loss = 0.0000
+----------- Itration 201 -----------
+Iteration 201 [2.0 s]: loss = 0.0000
+----------- Itration 202 -----------
+Iteration 202 [1.8 s]: loss = 0.0000
+----------- Itration 203 -----------
+Iteration 203 [1.9 s]: loss = 0.0000
+----------- Itration 204 -----------
+Iteration 204 [1.8 s]: loss = 0.0000
+----------- Itration 205 -----------
+Iteration 205 [1.8 s]: loss = 0.0000
+----------- Itration 206 -----------
+Iteration 206 [2.0 s]: loss = 0.0000
+----------- Itration 207 -----------
+Iteration 207 [1.9 s]: loss = 0.0000
+----------- Itration 208 -----------
+Iteration 208 [2.0 s]: loss = 0.0000
+----------- Itration 209 -----------
+Iteration 209 [1.8 s]: loss = 0.0000
+----------- Itration 210 -----------
+Iteration 210 [1.9 s]: loss = 0.0000
+----------- Itration 211 -----------
+Iteration 211 [1.9 s]: loss = 0.0000
+----------- Itration 212 -----------
+Iteration 212 [1.9 s]: loss = 0.0000
+----------- Itration 213 -----------
+Iteration 213 [1.9 s]: loss = 0.0000
+----------- Itration 214 -----------
+Iteration 214 [1.9 s]: loss = 0.0000
+----------- Itration 215 -----------
+Iteration 215 [2.0 s]: loss = 0.0000
+----------- Itration 216 -----------
+Iteration 216 [1.8 s]: loss = 0.0000
+----------- Itration 217 -----------
+Iteration 217 [1.8 s]: loss = 0.0000
+----------- Itration 218 -----------
+Iteration 218 [1.9 s]: loss = 0.0000
+----------- Itration 219 -----------
+Iteration 219 [1.9 s]: loss = 0.0000
+----------- Itration 220 -----------
+Iteration 220 [1.8 s]: loss = 0.0000
+----------- Itration 221 -----------
+Iteration 221 [1.9 s]: loss = 0.0000
+----------- Itration 222 -----------
+Iteration 222 [1.9 s]: loss = 0.0000
+----------- Itration 223 -----------
+Iteration 223 [1.9 s]: loss = 0.0000
+----------- Itration 224 -----------
+Iteration 224 [1.9 s]: loss = 0.0000
+----------- Itration 225 -----------
+Iteration 225 [1.9 s]: loss = 0.0000
+----------- Itration 226 -----------
+Iteration 226 [1.9 s]: loss = 0.0000
+----------- Itration 227 -----------
+Iteration 227 [2.0 s]: loss = 0.0000
+----------- Itration 228 -----------
+Iteration 228 [1.8 s]: loss = 0.0000
+----------- Itration 229 -----------
+Iteration 229 [1.8 s]: loss = 0.0000
+----------- Itration 230 -----------
+Iteration 230 [1.8 s]: loss = 0.0000
+----------- Itration 231 -----------
+Iteration 231 [1.9 s]: loss = 0.0000
+----------- Itration 232 -----------
+Iteration 232 [1.9 s]: loss = 0.0000
+----------- Itration 233 -----------
+Iteration 233 [2.0 s]: loss = 0.0000
+----------- Itration 234 -----------
+Iteration 234 [1.9 s]: loss = 0.0000
+----------- Itration 235 -----------
+Iteration 235 [1.9 s]: loss = 0.0000
+----------- Itration 236 -----------
+Iteration 236 [2.0 s]: loss = 0.0000
+----------- Itration 237 -----------
+Iteration 237 [1.9 s]: loss = 0.0000
+----------- Itration 238 -----------
+Iteration 238 [1.9 s]: loss = 0.0000
+----------- Itration 239 -----------
+Iteration 239 [1.9 s]: loss = 0.0000
+----------- Itration 240 -----------
+Iteration 240 [2.0 s]: loss = 0.0000
+----------- Itration 241 -----------
+Iteration 241 [1.9 s]: loss = 0.0000
+----------- Itration 242 -----------
+Iteration 242 [1.9 s]: loss = 0.0000
+----------- Itration 243 -----------
+Iteration 243 [1.9 s]: loss = 0.0000
+----------- Itration 244 -----------
+Iteration 244 [1.9 s]: loss = 0.0000
+----------- Itration 245 -----------
+Iteration 245 [1.9 s]: loss = 0.0000
+----------- Itration 246 -----------
+Iteration 246 [1.9 s]: loss = 0.0000
+----------- Itration 247 -----------
+Iteration 247 [1.9 s]: loss = 0.0000
+----------- Itration 248 -----------
+Iteration 248 [1.9 s]: loss = 0.0000
+----------- Itration 249 -----------
+Iteration 249 [2.0 s]: loss = 0.0000
+----------- Itration 250 -----------
+Iteration 250 [1.9 s]: loss = 0.0000
+----------- Itration 251 -----------
+Iteration 251 [1.9 s]: loss = 0.0000
+----------- Itration 252 -----------
+Iteration 252 [1.9 s]: loss = 0.0000
+----------- Itration 253 -----------
+Iteration 253 [1.9 s]: loss = 0.0000
+----------- Itration 254 -----------
+Iteration 254 [1.9 s]: loss = 0.0000
+----------- Itration 255 -----------
+Iteration 255 [1.9 s]: loss = 0.0000
+----------- Itration 256 -----------
+Iteration 256 [1.9 s]: loss = 0.0000
+----------- Itration 257 -----------
+Iteration 257 [1.9 s]: loss = 0.0000
+----------- Itration 258 -----------
+Iteration 258 [2.0 s]: loss = 0.0000
+----------- Itration 259 -----------
+Iteration 259 [1.9 s]: loss = 0.0000
+----------- Itration 260 -----------
+Iteration 260 [1.9 s]: loss = 0.0000
+----------- Itration 261 -----------
+Iteration 261 [1.9 s]: loss = 0.0000
+----------- Itration 262 -----------
+Iteration 262 [1.8 s]: loss = 0.0000
+----------- Itration 263 -----------
+Iteration 263 [1.9 s]: loss = 0.0000
+----------- Itration 264 -----------
+Iteration 264 [2.0 s]: loss = 0.0000
+----------- Itration 265 -----------
+Iteration 265 [1.9 s]: loss = 0.0000
+----------- Itration 266 -----------
+Iteration 266 [2.0 s]: loss = 0.0000
+----------- Itration 267 -----------
+Iteration 267 [2.0 s]: loss = 0.0000
+----------- Itration 268 -----------
+Iteration 268 [2.0 s]: loss = 0.0000
+----------- Itration 269 -----------
+Iteration 269 [1.9 s]: loss = 0.0000
+----------- Itration 270 -----------
+Iteration 270 [1.9 s]: loss = 0.0000
+----------- Itration 271 -----------
+Iteration 271 [2.0 s]: loss = 0.0000
+----------- Itration 272 -----------
+Iteration 272 [2.0 s]: loss = 0.0000
+----------- Itration 273 -----------
+Iteration 273 [1.9 s]: loss = 0.0000
+----------- Itration 274 -----------
+Iteration 274 [1.9 s]: loss = 0.0000
+----------- Itration 275 -----------
+Iteration 275 [1.9 s]: loss = 0.0000
+----------- Itration 276 -----------
+Iteration 276 [1.9 s]: loss = 0.0000
+----------- Itration 277 -----------
+Iteration 277 [1.9 s]: loss = 0.0000
+----------- Itration 278 -----------
+Iteration 278 [1.9 s]: loss = 0.0000
+----------- Itration 279 -----------
+Iteration 279 [1.9 s]: loss = 0.0000
+----------- Itration 280 -----------
+Iteration 280 [1.9 s]: loss = 0.0000
+----------- Itration 281 -----------
+Iteration 281 [1.9 s]: loss = 0.0000
+----------- Itration 282 -----------
+Iteration 282 [1.9 s]: loss = 0.0000
+----------- Itration 283 -----------
+Iteration 283 [1.9 s]: loss = 0.0000
+----------- Itration 284 -----------
+Iteration 284 [2.0 s]: loss = 0.0000
+----------- Itration 285 -----------
+Iteration 285 [1.9 s]: loss = 0.0000
+----------- Itration 286 -----------
+Iteration 286 [1.9 s]: loss = 0.0000
+----------- Itration 287 -----------
+Iteration 287 [1.9 s]: loss = 0.0000
+----------- Itration 288 -----------
+Iteration 288 [2.0 s]: loss = 0.0000
+----------- Itration 289 -----------
+Iteration 289 [1.9 s]: loss = 0.0000
+----------- Itration 290 -----------
+Iteration 290 [2.0 s]: loss = 0.0000
+----------- Itration 291 -----------
+Iteration 291 [2.0 s]: loss = 0.0000
+----------- Itration 292 -----------
+Iteration 292 [1.9 s]: loss = 0.0000
+----------- Itration 293 -----------
+Iteration 293 [1.9 s]: loss = 0.0000
+----------- Itration 294 -----------
+Iteration 294 [2.0 s]: loss = 0.0000
+----------- Itration 295 -----------
+Iteration 295 [2.0 s]: loss = 0.0000
+----------- Itration 296 -----------
+Iteration 296 [1.9 s]: loss = 0.0000
+----------- Itration 297 -----------
+Iteration 297 [1.9 s]: loss = 0.0000
+----------- Itration 298 -----------
+Iteration 298 [1.9 s]: loss = 0.0000
+----------- Itration 299 -----------
+Iteration 299 [2.0 s]: loss = 0.0000
+----------- Itration 300 -----------
+Iteration 300 [1.9 s]: loss = 0.0000
+----------- Itration 301 -----------
+Iteration 301 [1.9 s]: loss = 0.0000
+----------- Itration 302 -----------
+Iteration 302 [1.9 s]: loss = 0.0000
+----------- Itration 303 -----------
+Iteration 303 [1.9 s]: loss = 0.0000
+----------- Itration 304 -----------
+Iteration 304 [1.8 s]: loss = 0.0000
+----------- Itration 305 -----------
+Iteration 305 [1.9 s]: loss = 0.0000
+----------- Itration 306 -----------
+Iteration 306 [1.9 s]: loss = 0.0000
+----------- Itration 307 -----------
+Iteration 307 [1.9 s]: loss = 0.0000
+----------- Itration 308 -----------
+Iteration 308 [1.9 s]: loss = 0.0000
+----------- Itration 309 -----------
+Iteration 309 [1.9 s]: loss = 0.0000
+----------- Itration 310 -----------
+Iteration 310 [1.9 s]: loss = 0.0000
+----------- Itration 311 -----------
+Iteration 311 [1.9 s]: loss = 0.0000
+----------- Itration 312 -----------
+Iteration 312 [1.9 s]: loss = 0.0000
+----------- Itration 313 -----------
+Iteration 313 [1.9 s]: loss = 0.0000
+----------- Itration 314 -----------
+Iteration 314 [1.9 s]: loss = 0.0000
+----------- Itration 315 -----------
+Iteration 315 [1.9 s]: loss = 0.0000
+----------- Itration 316 -----------
+Iteration 316 [1.8 s]: loss = 0.0000
+----------- Itration 317 -----------
+Iteration 317 [1.9 s]: loss = 0.0000
+----------- Itration 318 -----------
+Iteration 318 [1.9 s]: loss = 0.0000
+----------- Itration 319 -----------
+Iteration 319 [1.9 s]: loss = 0.0000
+----------- Itration 320 -----------
+Iteration 320 [1.9 s]: loss = 0.0000
+----------- Itration 321 -----------
+Iteration 321 [1.9 s]: loss = 0.0000
+----------- Itration 322 -----------
+Iteration 322 [1.9 s]: loss = 0.0000
+----------- Itration 323 -----------
+Iteration 323 [1.9 s]: loss = 0.0000
+----------- Itration 324 -----------
+Iteration 324 [1.9 s]: loss = 0.0000
+----------- Itration 325 -----------
+Iteration 325 [2.0 s]: loss = 0.0000
+----------- Itration 326 -----------
+Iteration 326 [1.9 s]: loss = 0.0000
+----------- Itration 327 -----------
+Iteration 327 [1.9 s]: loss = 0.0000
+----------- Itration 328 -----------
+Iteration 328 [1.9 s]: loss = 0.0000
+----------- Itration 329 -----------
+Iteration 329 [2.0 s]: loss = 0.0000
+----------- Itration 330 -----------
+Iteration 330 [1.9 s]: loss = 0.0000
+----------- Itration 331 -----------
+Iteration 331 [1.8 s]: loss = 0.0000
+----------- Itration 332 -----------
+Iteration 332 [1.8 s]: loss = 0.0000
+----------- Itration 333 -----------
+Iteration 333 [1.8 s]: loss = 0.0000
+----------- Itration 334 -----------
+Iteration 334 [1.9 s]: loss = 0.0000
+----------- Itration 335 -----------
+Iteration 335 [1.9 s]: loss = 0.0000
+----------- Itration 336 -----------
+Iteration 336 [1.9 s]: loss = 0.0000
+----------- Itration 337 -----------
+Iteration 337 [1.9 s]: loss = 0.0000
+----------- Itration 338 -----------
+Iteration 338 [1.9 s]: loss = 0.0000
+----------- Itration 339 -----------
+Iteration 339 [2.0 s]: loss = 0.0000
+----------- Itration 340 -----------
+Iteration 340 [1.9 s]: loss = 0.0000
+----------- Itration 341 -----------
+Iteration 341 [1.8 s]: loss = 0.0000
+----------- Itration 342 -----------
+Iteration 342 [1.9 s]: loss = 0.0000
+----------- Itration 343 -----------
+Iteration 343 [1.8 s]: loss = 0.0000
+----------- Itration 344 -----------
+Iteration 344 [1.8 s]: loss = 0.0000
+----------- Itration 345 -----------
+Iteration 345 [1.8 s]: loss = 0.0000
+----------- Itration 346 -----------
+Iteration 346 [1.9 s]: loss = 0.0000
+----------- Itration 347 -----------
+Iteration 347 [1.9 s]: loss = 0.0000
+----------- Itration 348 -----------
+Iteration 348 [1.9 s]: loss = 0.0000
+----------- Itration 349 -----------
+Iteration 349 [1.8 s]: loss = 0.0000
+----------- Itration 350 -----------
+Iteration 350 [2.0 s]: loss = 0.0000
+----------- Itration 351 -----------
+Iteration 351 [1.8 s]: loss = 0.0000
+----------- Itration 352 -----------
+Iteration 352 [1.9 s]: loss = 0.0000
+----------- Itration 353 -----------
+Iteration 353 [1.9 s]: loss = 0.0000
+----------- Itration 354 -----------
+Iteration 354 [1.8 s]: loss = 0.0000
+----------- Itration 355 -----------
+Iteration 355 [1.8 s]: loss = 0.0000
+----------- Itration 356 -----------
+Iteration 356 [1.9 s]: loss = 0.0000
+----------- Itration 357 -----------
+Iteration 357 [1.9 s]: loss = 0.0000
+----------- Itration 358 -----------
+Iteration 358 [1.9 s]: loss = 0.0000
+----------- Itration 359 -----------
+Iteration 359 [2.0 s]: loss = 0.0000
+----------- Itration 360 -----------
+Iteration 360 [1.9 s]: loss = 0.0000
+----------- Itration 361 -----------
+Iteration 361 [1.9 s]: loss = 0.0000
+----------- Itration 362 -----------
+Iteration 362 [1.8 s]: loss = 0.0000
+----------- Itration 363 -----------
+Iteration 363 [1.7 s]: loss = 0.0000
+----------- Itration 364 -----------
+Iteration 364 [1.8 s]: loss = 0.0000
+----------- Itration 365 -----------
+Iteration 365 [1.8 s]: loss = 0.0000
+----------- Itration 366 -----------
+Iteration 366 [1.8 s]: loss = 0.0000
+----------- Itration 367 -----------
+Iteration 367 [1.7 s]: loss = 0.0000
+----------- Itration 368 -----------
+Iteration 368 [1.9 s]: loss = 0.0000
+----------- Itration 369 -----------
+Iteration 369 [1.8 s]: loss = 0.0000
+----------- Itration 370 -----------
+Iteration 370 [1.9 s]: loss = 0.0000
+----------- Itration 371 -----------
+Iteration 371 [1.9 s]: loss = 0.0000
+----------- Itration 372 -----------
+Iteration 372 [1.9 s]: loss = 0.0000
+----------- Itration 373 -----------
+Iteration 373 [1.9 s]: loss = 0.0000
+----------- Itration 374 -----------
+Iteration 374 [1.8 s]: loss = 0.0000
+----------- Itration 375 -----------
+Iteration 375 [1.9 s]: loss = 0.0000
+----------- Itration 376 -----------
+Iteration 376 [1.9 s]: loss = 0.0000
+----------- Itration 377 -----------
+Iteration 377 [1.9 s]: loss = 0.0000
+----------- Itration 378 -----------
+Iteration 378 [1.9 s]: loss = 0.0000
+----------- Itration 379 -----------
+Iteration 379 [1.8 s]: loss = 0.0000
+----------- Itration 380 -----------
+Iteration 380 [1.8 s]: loss = 0.0000
+----------- Itration 381 -----------
+Iteration 381 [1.9 s]: loss = 0.0000
+----------- Itration 382 -----------
+Iteration 382 [1.9 s]: loss = 0.0000
+----------- Itration 383 -----------
+Iteration 383 [1.9 s]: loss = 0.0000
+----------- Itration 384 -----------
+Iteration 384 [1.8 s]: loss = 0.0000
+----------- Itration 385 -----------
+Iteration 385 [1.9 s]: loss = 0.0000
+----------- Itration 386 -----------
+Iteration 386 [1.9 s]: loss = 0.0000
+----------- Itration 387 -----------
+Iteration 387 [1.8 s]: loss = 0.0000
+----------- Itration 388 -----------
+Iteration 388 [1.7 s]: loss = 0.0000
+----------- Itration 389 -----------
+Iteration 389 [1.8 s]: loss = 0.0000
+----------- Itration 390 -----------
+Iteration 390 [1.9 s]: loss = 0.0000
+----------- Itration 391 -----------
+Iteration 391 [1.9 s]: loss = 0.0000
+----------- Itration 392 -----------
+Iteration 392 [1.9 s]: loss = 0.0000
+----------- Itration 393 -----------
+Iteration 393 [1.9 s]: loss = 0.0000
+----------- Itration 394 -----------
+Iteration 394 [1.9 s]: loss = 0.0000
+----------- Itration 395 -----------
+Iteration 395 [1.9 s]: loss = 0.0000
+----------- Itration 396 -----------
+Iteration 396 [1.9 s]: loss = 0.0000
+----------- Itration 397 -----------
+Iteration 397 [1.9 s]: loss = 0.0000
+----------- Itration 398 -----------
+Iteration 398 [1.9 s]: loss = 0.0000
+----------- Itration 399 -----------
+Iteration 399 [1.9 s]: loss = 0.0000
+----------- Itration 400 -----------
+Iteration 400 [1.8 s]: loss = 0.0000
+End. Best Iteration 9:  HR = 0.8126, NDCG = 0.5448. in [3268.90 s]
+The best MLP model is saved to pretrained/foursquare/nyc/nyc_MLP_[64,32,16,8].h5

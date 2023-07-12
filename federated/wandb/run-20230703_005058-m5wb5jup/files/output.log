@@ -1,0 +1,475 @@
+
+
+
+
+
+
+
+
+
+
+
+
+epoch: 10, loss: 0.50, time: 9.81:   2%|▎            | 10/400 [01:40<1:07:21, 10.36s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 20, loss: 0.47, time: 10.50:   5%|▌           | 19/400 [03:19<1:02:05,  9.78s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+epoch: 30, loss: 0.45, time: 6.93:   8%|█▏             | 30/400 [04:58<54:32,  8.84s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 40, loss: 0.50, time: 4.77:  10%|█▌             | 40/400 [05:58<33:55,  5.65s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 50, loss: 0.45, time: 4.63:  12%|█▊             | 49/400 [06:43<24:55,  4.26s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 60, loss: 0.46, time: 4.09:  15%|██▏            | 59/400 [07:30<25:06,  4.42s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 70, loss: 0.50, time: 4.06:  17%|██▌            | 69/400 [08:12<22:16,  4.04s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+epoch: 80, loss: 0.46, time: 3.72:  20%|███            | 80/400 [08:54<22:25,  4.21s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 90, loss: 0.50, time: 3.74:  22%|███▍           | 90/400 [09:34<20:26,  3.96s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 100, loss: 0.47, time: 4.00:  25%|███▎         | 100/400 [10:15<20:33,  4.11s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 110, loss: 0.48, time: 3.96:  28%|███▌         | 110/400 [10:55<19:32,  4.04s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 120, loss: 0.47, time: 3.72:  30%|███▉         | 120/400 [11:38<21:26,  4.59s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 130, loss: 0.48, time: 3.89:  32%|████▏        | 130/400 [12:20<19:12,  4.27s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 140, loss: 0.46, time: 4.72:  35%|████▌        | 140/400 [13:00<18:42,  4.32s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 150, loss: 0.47, time: 4.23:  38%|████▉        | 150/400 [13:49<18:16,  4.39s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 160, loss: 0.48, time: 3.81:  40%|█████▏       | 160/400 [14:27<15:44,  3.94s/it]
+
+
+
+
+
+
+
+
+
+epoch: 169, loss: 0.44, time: 4.03:  42%|█████▍       | 169/400 [15:02<14:45,  3.83s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 180, loss: 0.48, time: 4.09:  45%|█████▊       | 179/400 [15:45<13:52,  3.76s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 189, loss: 0.43, time: 3.88:  47%|██████▏      | 189/400 [16:20<13:24,  3.82s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 200, loss: 0.45, time: 3.78:  50%|██████▍      | 199/400 [17:03<12:40,  3.79s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 209, loss: 0.44, time: 3.79:  52%|██████▊      | 209/400 [17:39<12:22,  3.89s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 219, loss: 0.46, time: 3.85:  55%|███████      | 219/400 [18:18<11:48,  3.91s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 230, loss: 0.44, time: 4.03:  57%|███████▍     | 229/400 [19:01<11:10,  3.92s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 239, loss: 0.46, time: 3.48:  60%|███████▊     | 239/400 [19:36<10:18,  3.84s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 249, loss: 0.47, time: 3.94:  62%|████████     | 249/400 [20:14<09:43,  3.87s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 259, loss: 0.44, time: 3.91:  65%|████████▍    | 259/400 [20:54<09:16,  3.95s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 269, loss: 0.48, time: 3.89:  67%|████████▋    | 269/400 [21:33<08:23,  3.84s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 279, loss: 0.45, time: 3.64:  70%|█████████    | 279/400 [22:12<07:38,  3.79s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 290, loss: 0.41, time: 3.95:  72%|█████████▍   | 289/400 [23:02<08:35,  4.65s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 299, loss: 0.46, time: 4.24:  75%|█████████▋   | 299/400 [23:37<06:36,  3.92s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 310, loss: 0.42, time: 4.09:  77%|██████████   | 309/400 [24:20<05:43,  3.77s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 319, loss: 0.45, time: 3.90:  80%|██████████▎  | 319/400 [24:55<05:07,  3.80s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 330, loss: 0.43, time: 3.76:  82%|██████████▋  | 330/400 [25:38<04:32,  3.89s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 340, loss: 0.45, time: 3.56:  85%|███████████  | 339/400 [26:16<03:52,  3.82s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 350, loss: 0.44, time: 3.70:  88%|███████████▍ | 350/400 [27:00<03:34,  4.29s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 360, loss: 0.42, time: 3.91:  90%|███████████▋ | 359/400 [27:38<02:36,  3.82s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 370, loss: 0.47, time: 3.80:  92%|███████████▉ | 369/400 [28:16<01:58,  3.81s/it]
+
+
+
+
+
+
+
+
+
+
+epoch: 379, loss: 0.40, time: 4.07:  95%|████████████▎| 379/400 [28:52<01:23,  3.98s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 390, loss: 0.42, time: 3.91:  98%|████████████▋| 390/400 [29:34<00:40,  4.04s/it]
+
+
+
+
+
+
+
+
+epoch: 398, loss: 0.45, time: 3.68: 100%|████████████▉| 398/400 [30:09<00:09,  4.55s/it]
+Traceback (most recent call last):
+  File "src/main.py", line 99, in <module>
+    main()
+  File "src/main.py", line 80, in main
+    trained_model = run_server(dataset, num_clients=args.c, epochs=args.epochs,
+  File "/home/abenzaamia/NeuCF/federated/src/server.py", line 39, in run_server
+    trained_weights = training_process(server_model, clients, num_clients, epochs, local_epochs, dataset, args)
+  File "/home/abenzaamia/NeuCF/federated/src/fedmlp/train.py", line 66, in training_process
+    w, loss = single_train_round(server_model, clients, local_epochs)
+  File "/home/abenzaamia/NeuCF/federated/src/fedmlp/train.py", line 112, in single_train_round
+    weights, loss = client.train(server_model_copy, local_epochs)
+  File "/home/abenzaamia/NeuCF/federated/src/client.py", line 49, in train
+    loss.backward()
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 193, in backward
+    grad_tensors_ = _make_grads(tensors, grad_tensors_, is_grads_batched=False)
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 89, in _make_grads
+    new_grads.append(torch.ones_like(out, memory_format=torch.preserve_format))
+KeyboardInterrupt

@@ -1,0 +1,44 @@
+
+
+
+
+
+
+
+
+epoch: 10, loss: 0.58, time: 1.22:   2%|█                                       | 10/400 [01:02<1:49:13, 16.80s/it]
+
+
+
+
+
+
+
+epoch: 20, loss: 0.54, time: 1.16:   5%|██                                      | 20/400 [02:05<1:46:32, 16.82s/it]
+
+
+
+
+
+
+epoch: 30, loss: 0.51, time: 1.23:   7%|███                                       | 29/400 [03:07<39:53,  6.45s/it]
+Traceback (most recent call last):
+  File "src/main.py", line 93, in <module>
+    main()
+  File "src/main.py", line 74, in main
+    trained_model = run_server(dataset, num_clients=args.c, epochs=args.epochs,
+  File "/home/abenzaamia/NeuCF/federated/src/server.py", line 39, in run_server
+    trained_weights = training_process(server_model, clients, num_clients, epochs, local_epochs, dataset, args)
+  File "/home/abenzaamia/NeuCF/federated/src/fedmlp/train.py", line 79, in training_process
+    hr, ndcg, mapk, mark = evaluate_model(server_model, users, items, negatives)
+  File "/home/abenzaamia/NeuCF/federated/src/fedmlp/eval.py", line 108, in evaluate_model
+    pred, _ = model(user_input, item_input_gpu)
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/abenzaamia/NeuCF/federated/src/fedmlp/models.py", line 31, in forward
+    mlp_user_latent = torch.nn.Flatten()(self.mlp_embedding_user(user_input))
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/nn/modules/flatten.py", line 41, in __init__
+    super().__init__()
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 437, in __init__
+    def __init__(self, *args, **kwargs) -> None:
+KeyboardInterrupt

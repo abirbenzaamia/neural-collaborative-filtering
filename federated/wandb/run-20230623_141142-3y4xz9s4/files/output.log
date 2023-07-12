@@ -1,0 +1,75 @@
+
+
+
+
+
+epoch: 11, loss: 0.79, time: 1.14:   3%|▋                         | 11/400 [00:09<06:42,  1.03s/it]
+
+
+
+
+epoch: 20, loss: 0.78, time: 0.66:   5%|█▎                        | 20/400 [00:16<05:12,  1.22it/s]
+
+
+
+
+epoch: 31, loss: 0.77, time: 0.53:   8%|██                        | 31/400 [00:25<04:39,  1.32it/s]
+
+
+
+epoch: 39, loss: 0.76, time: 0.68:  10%|██▌                       | 39/400 [00:31<04:34,  1.32it/s]
+
+
+
+
+
+epoch: 51, loss: 0.75, time: 0.69:  13%|███▎                      | 51/400 [00:41<04:35,  1.26it/s]
+
+
+
+
+epoch: 62, loss: 0.74, time: 0.73:  16%|████                      | 62/400 [00:49<04:13,  1.33it/s]
+
+
+
+epoch: 70, loss: 0.74, time: 0.58:  18%|████▌                     | 70/400 [00:55<04:39,  1.18it/s]
+
+
+
+
+
+epoch: 81, loss: 0.73, time: 0.71:  20%|█████▎                    | 81/400 [01:05<04:12,  1.26it/s]
+
+
+
+epoch: 89, loss: 0.72, time: 0.69:  22%|█████▊                    | 89/400 [01:11<03:56,  1.32it/s]
+
+
+
+
+epoch: 100, loss: 0.71, time: 0.68:  25%|██████                  | 100/400 [01:19<04:26,  1.13it/s]
+
+
+
+
+
+epoch: 111, loss: 0.70, time: 0.62:  28%|██████▋                 | 111/400 [01:29<03:53,  1.24it/s]
+epoch: 111, loss: 0.70, time: 0.62:  28%|██████▋                 | 111/400 [01:30<03:55,  1.23it/s]
+Traceback (most recent call last):
+  File "src/main.py", line 93, in <module>
+    main()
+  File "src/main.py", line 74, in main
+    trained_model = run_server(dataset, num_clients=args.c, epochs=args.epochs,
+  File "/home/abenzaamia/MLP/federated/src/server.py", line 39, in run_server
+    trained_weights = training_process(server_model, clients, num_clients, epochs, local_epochs, dataset, args)
+  File "/home/abenzaamia/MLP/federated/src/fedmlp/train.py", line 66, in training_process
+    w, loss = single_train_round(server_model, clients, local_epochs)
+  File "/home/abenzaamia/MLP/federated/src/fedmlp/train.py", line 112, in single_train_round
+    weights, loss = client.train(server_model_copy, local_epochs)
+  File "/home/abenzaamia/MLP/federated/src/client.py", line 49, in train
+    loss.backward()
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 200, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

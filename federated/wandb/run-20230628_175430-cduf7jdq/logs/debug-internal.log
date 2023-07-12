@@ -1,0 +1,837 @@
+2023-06-28 17:54:30,550 INFO    StreamThr :217589 [internal.py:wandb_internal():87] W&B internal server running at pid: 217589, started at: 2023-06-28 17:54:30.549120
+2023-06-28 17:54:30,553 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status
+2023-06-28 17:54:30,578 INFO    WriterThread:217589 [datastore.py:open_for_write():85] open: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/run-cduf7jdq.wandb
+2023-06-28 17:54:30,580 DEBUG   SenderThread:217589 [sender.py:send():336] send: header
+2023-06-28 17:54:30,581 DEBUG   SenderThread:217589 [sender.py:send():336] send: run
+2023-06-28 17:54:30,958 INFO    SenderThread:217589 [dir_watcher.py:__init__():219] watching files in: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files
+2023-06-28 17:54:30,958 INFO    SenderThread:217589 [sender.py:_start_run_threads():1078] run started: cduf7jdq with start time 1687967670.546966
+2023-06-28 17:54:30,982 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:54:30,982 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:54:30,988 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: check_version
+2023-06-28 17:54:30,988 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: check_version
+2023-06-28 17:54:31,101 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: run_start
+2023-06-28 17:54:31,116 DEBUG   HandlerThread:217589 [system_info.py:__init__():31] System info init
+2023-06-28 17:54:31,116 DEBUG   HandlerThread:217589 [system_info.py:__init__():46] System info init done
+2023-06-28 17:54:31,117 INFO    HandlerThread:217589 [system_monitor.py:start():183] Starting system monitor
+2023-06-28 17:54:31,117 INFO    SystemMonitor:217589 [system_monitor.py:_start():147] Starting system asset monitoring threads
+2023-06-28 17:54:31,117 INFO    HandlerThread:217589 [system_monitor.py:probe():204] Collecting system info
+2023-06-28 17:54:31,118 INFO    SystemMonitor:217589 [interfaces.py:start():187] Started cpu monitoring
+2023-06-28 17:54:31,118 INFO    SystemMonitor:217589 [interfaces.py:start():187] Started disk monitoring
+2023-06-28 17:54:31,120 INFO    SystemMonitor:217589 [interfaces.py:start():187] Started gpu monitoring
+2023-06-28 17:54:31,120 INFO    SystemMonitor:217589 [interfaces.py:start():187] Started memory monitoring
+2023-06-28 17:54:31,121 INFO    SystemMonitor:217589 [interfaces.py:start():187] Started network monitoring
+2023-06-28 17:54:31,137 DEBUG   HandlerThread:217589 [system_info.py:probe():195] Probing system
+2023-06-28 17:54:31,144 DEBUG   HandlerThread:217589 [git.py:repo():40] git repository is invalid
+2023-06-28 17:54:31,144 DEBUG   HandlerThread:217589 [system_info.py:probe():240] Probing system done
+2023-06-28 17:54:31,144 DEBUG   HandlerThread:217589 [system_monitor.py:probe():213] {'os': 'Linux-3.10.0-1160.92.1.el7.x86_64-x86_64-with-glibc2.17', 'python': '3.8.12', 'heartbeatAt': '2023-06-28T15:54:31.137228', 'startedAt': '2023-06-28T15:54:30.524014', 'docker': None, 'cuda': None, 'args': ('--data', 'amazon', '--type', 'grocery', '-c', '200'), 'state': 'running', 'program': 'src/main.py', 'codePath': 'src/main.py', 'host': 'bb8-lix.polytechnique.fr', 'username': 'abenzaamia', 'executable': '/home/abenzaamia/.venv/bin/python', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 2300.0, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}, {'current': 2300.0, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 72.60553359985352, 'used': 43.50544738769531}, 'gpu': 'Tesla V100-PCIE-32GB', 'gpu_count': 1, 'gpu_devices': [{'name': 'Tesla V100-PCIE-32GB', 'memory_total': 34359738368}], 'memory': {'total': 187.36473846435547}}
+2023-06-28 17:54:31,144 INFO    HandlerThread:217589 [system_monitor.py:probe():214] Finished collecting system info
+2023-06-28 17:54:31,144 INFO    HandlerThread:217589 [system_monitor.py:probe():217] Publishing system info
+2023-06-28 17:54:31,144 DEBUG   HandlerThread:217589 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-06-28 17:54:31,145 DEBUG   HandlerThread:217589 [system_info.py:_save_pip():67] Saving pip packages done
+2023-06-28 17:54:31,146 INFO    HandlerThread:217589 [system_monitor.py:probe():219] Finished publishing system info
+2023-06-28 17:54:31,153 DEBUG   SenderThread:217589 [sender.py:send():336] send: files
+2023-06-28 17:54:31,154 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-metadata.json with policy now
+2023-06-28 17:54:31,167 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 17:54:31,167 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 17:54:31,324 DEBUG   SenderThread:217589 [sender.py:send():336] send: telemetry
+2023-06-28 17:54:31,616 INFO    wandb-upload_0:217589 [upload_job.py:push():138] Uploaded file /tmp/tmpe9lr4o85wandb/ncf5liwt-wandb-metadata.json
+2023-06-28 17:54:31,964 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_created():278] file/dir created: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:54:31,964 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_created():278] file/dir created: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/requirements.txt
+2023-06-28 17:54:31,965 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_created():278] file/dir created: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-metadata.json
+2023-06-28 17:54:33,962 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_created():278] file/dir created: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:54:35,964 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:54:36,198 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:54:36,199 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:54:36,200 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:54:37,966 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:54:38,635 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:54:38,638 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:54:38,640 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:54:38,640 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:54:38,641 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:54:38,967 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:54:39,969 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:54:41,065 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:54:41,067 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:54:41,068 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:54:41,069 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:54:41,069 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:54:41,972 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:54:41,973 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:54:42,072 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:54:43,472 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:54:43,474 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:54:43,475 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:54:43,476 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:54:43,477 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:54:43,975 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:54:43,975 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:54:45,872 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:54:45,874 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:54:45,875 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:54:45,876 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:54:45,880 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:54:45,978 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:54:46,166 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 17:54:46,167 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 17:54:47,318 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:54:47,980 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:54:48,226 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:54:48,228 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:54:48,229 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:54:48,230 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:54:48,234 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:54:48,982 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:54:49,984 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:54:50,576 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:54:50,577 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:54:50,578 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:54:50,579 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:54:50,584 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:54:50,985 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:54:51,987 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:54:52,585 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:54:52,899 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:54:52,900 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:54:52,901 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:54:52,902 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:54:52,907 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:54:52,988 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:54:53,989 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:54:55,250 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:54:55,252 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:54:55,253 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:54:55,254 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:54:55,258 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:54:55,992 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:54:55,992 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:54:57,612 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:54:57,613 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:54:57,614 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:54:57,614 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:54:57,615 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:54:57,616 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:54:57,995 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:54:59,998 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:55:01,166 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 17:55:01,167 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 17:55:03,335 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:55:04,003 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/config.yaml
+2023-06-28 17:55:08,548 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:55:13,550 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:55:16,168 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 17:55:16,169 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 17:55:18,821 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:55:23,826 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:55:28,832 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:55:31,122 DEBUG   SystemMonitor:217589 [system_monitor.py:_start():161] Starting system metrics aggregation loop
+2023-06-28 17:55:31,125 DEBUG   SenderThread:217589 [sender.py:send():336] send: stats
+2023-06-28 17:55:31,168 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 17:55:31,169 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 17:55:34,392 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:55:39,395 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:55:44,398 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:55:46,170 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 17:55:46,171 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 17:55:46,961 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:55:48,062 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:55:49,062 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:55:49,385 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:55:49,388 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:55:49,389 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:55:49,390 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:55:49,391 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:55:50,064 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:55:50,065 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:55:50,392 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:55:51,710 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:55:51,711 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:55:51,712 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:55:51,713 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:55:51,714 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:55:52,067 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:55:54,046 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:55:54,047 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:55:54,049 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:55:54,049 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:55:54,050 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:55:54,068 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:55:54,068 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:55:56,053 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:55:56,070 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:55:56,395 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:55:56,397 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:55:56,398 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:55:56,399 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:55:56,400 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:55:57,071 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:55:58,071 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:55:58,792 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:55:58,793 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:55:58,795 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:55:58,795 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:55:58,796 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:55:59,072 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:56:00,074 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:56:01,090 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:56:01,092 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:56:01,093 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:56:01,093 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:56:01,094 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:56:01,095 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:56:01,132 DEBUG   SenderThread:217589 [sender.py:send():336] send: stats
+2023-06-28 17:56:01,171 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 17:56:01,171 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 17:56:02,077 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:56:02,077 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:56:03,448 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:56:03,450 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:56:03,451 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:56:03,451 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:56:03,452 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:56:04,078 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:56:04,078 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:56:05,832 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:56:05,834 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:56:05,835 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:56:05,836 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:56:05,836 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:56:06,080 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:56:06,838 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:56:08,081 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:56:08,129 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:56:08,130 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:56:08,132 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:56:08,132 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:56:08,133 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:56:09,082 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:56:10,084 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:56:10,443 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:56:10,444 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:56:10,446 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:56:10,446 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:56:10,447 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:56:11,085 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:56:12,086 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:56:12,448 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:56:16,171 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 17:56:16,172 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 17:56:18,403 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:56:23,405 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:56:28,407 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:56:31,137 DEBUG   SenderThread:217589 [sender.py:send():336] send: stats
+2023-06-28 17:56:31,172 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 17:56:31,173 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 17:56:34,355 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:56:39,364 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:56:44,372 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:56:46,174 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 17:56:46,175 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 17:56:50,337 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:56:55,342 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:57:00,103 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:57:01,106 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:57:01,136 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:57:01,146 DEBUG   SenderThread:217589 [sender.py:send():336] send: stats
+2023-06-28 17:57:01,176 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 17:57:01,177 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 17:57:02,138 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:57:02,503 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:57:02,504 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:57:02,506 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:57:02,506 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:57:02,507 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:57:03,138 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:57:04,140 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:57:04,837 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:57:04,839 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:57:04,840 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:57:04,840 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:57:04,841 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:57:05,141 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:57:06,141 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:57:06,844 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:57:07,276 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:57:07,277 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:57:07,278 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:57:07,279 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:57:07,280 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:57:08,144 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:57:08,144 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:57:09,692 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:57:09,694 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:57:09,695 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:57:09,696 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:57:09,697 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:57:10,146 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:57:10,146 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:57:12,084 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:57:12,086 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:57:12,087 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:57:12,088 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:57:12,088 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:57:12,093 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:57:12,147 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:57:14,149 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:57:14,586 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:57:14,588 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:57:14,589 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:57:14,590 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:57:14,590 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:57:15,151 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:57:16,152 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:57:16,176 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 17:57:16,178 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 17:57:17,084 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:57:17,085 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:57:17,086 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:57:17,087 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:57:17,088 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:57:17,089 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:57:17,153 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:57:18,153 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:57:19,444 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:57:19,446 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:57:19,446 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:57:19,447 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:57:19,448 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:57:20,155 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:57:20,155 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:57:21,866 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:57:21,868 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:57:21,869 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:57:21,869 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:57:21,870 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:57:22,156 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:57:22,871 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:57:24,158 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:57:25,891 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:57:25,892 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:57:25,893 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:57:25,894 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:57:25,895 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:57:26,160 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:57:27,896 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:57:28,161 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:57:31,151 DEBUG   SenderThread:217589 [sender.py:send():336] send: stats
+2023-06-28 17:57:31,175 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 17:57:31,176 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 17:57:33,342 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:57:38,349 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:57:43,355 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:57:46,177 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 17:57:46,178 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 17:57:49,341 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:57:54,349 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:57:59,356 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:58:01,160 DEBUG   SenderThread:217589 [sender.py:send():336] send: stats
+2023-06-28 17:58:01,177 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 17:58:01,178 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 17:58:05,340 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:58:10,347 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:58:15,069 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:58:16,072 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:58:16,178 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 17:58:16,179 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 17:58:17,200 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:58:17,422 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:58:17,424 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:58:17,426 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:58:17,426 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:58:17,427 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:58:18,201 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:58:19,201 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:58:19,722 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:58:19,724 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:58:19,725 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:58:19,725 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:58:19,726 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:58:20,202 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:58:21,203 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:58:21,731 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:58:22,023 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:58:22,024 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:58:22,025 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:58:22,026 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:58:22,027 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:58:22,204 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:58:24,351 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:58:24,352 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:58:24,354 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:58:24,354 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:58:24,355 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:58:25,205 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:58:25,206 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:58:26,730 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:58:26,731 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:58:26,733 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:58:26,733 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:58:26,733 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:58:26,735 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:58:27,207 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:58:27,207 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:58:29,081 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:58:29,083 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:58:29,084 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:58:29,084 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:58:29,085 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:58:29,208 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:58:29,209 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:58:31,165 DEBUG   SenderThread:217589 [sender.py:send():336] send: stats
+2023-06-28 17:58:31,177 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 17:58:31,178 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 17:58:31,210 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:58:31,474 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:58:31,476 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:58:31,477 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:58:31,477 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:58:31,478 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:58:32,211 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:58:32,480 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:58:33,211 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:58:33,910 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:58:33,911 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:58:33,912 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:58:33,913 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:58:33,914 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:58:34,212 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:58:35,214 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:58:36,273 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:58:36,275 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:58:36,276 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:58:36,277 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:58:36,278 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:58:37,215 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:58:38,280 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:58:38,628 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:58:38,629 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:58:38,630 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:58:38,631 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:58:38,632 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:58:39,216 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:58:39,217 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:58:41,217 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:58:43,637 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:58:46,178 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 17:58:46,179 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 17:58:49,332 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:58:54,336 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:58:59,340 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:59:01,174 DEBUG   SenderThread:217589 [sender.py:send():336] send: stats
+2023-06-28 17:59:01,179 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 17:59:01,180 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 17:59:05,330 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:59:10,332 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:59:15,333 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:59:16,180 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 17:59:16,181 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 17:59:20,337 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:59:25,340 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:59:28,983 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:59:30,257 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:59:30,987 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:59:31,177 DEBUG   SenderThread:217589 [sender.py:send():336] send: stats
+2023-06-28 17:59:31,179 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 17:59:31,180 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 17:59:31,258 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:59:31,399 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:59:31,401 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:59:31,402 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:59:31,403 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:59:31,403 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:59:32,259 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:59:33,260 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:59:33,722 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:59:33,724 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:59:33,725 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:59:33,725 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:59:33,726 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:59:34,261 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:59:35,262 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:59:36,055 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:59:36,057 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:59:36,058 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:59:36,058 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:59:36,059 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:59:36,060 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:59:36,262 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:59:37,263 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:59:38,401 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:59:38,403 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:59:38,404 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:59:38,405 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:59:38,406 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:59:39,265 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:59:40,706 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:59:40,707 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:59:40,709 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:59:40,709 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:59:40,710 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:59:41,267 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:59:41,268 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:59:41,713 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:59:43,072 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:59:43,074 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:59:43,075 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:59:43,076 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:59:43,077 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:59:43,269 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:59:43,269 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:59:45,271 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:59:45,411 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:59:45,412 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:59:45,413 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:59:45,414 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:59:45,415 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:59:46,180 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 17:59:46,181 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 17:59:46,272 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:59:47,273 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:59:47,343 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:59:47,766 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:59:47,768 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:59:47,769 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:59:47,770 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:59:47,771 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:59:48,273 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:59:49,274 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:59:50,135 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:59:50,136 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:59:50,137 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:59:50,138 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:59:50,139 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:59:50,275 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:59:52,479 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:59:52,480 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 17:59:52,482 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 17:59:52,482 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 17:59:52,482 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 17:59:52,484 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 17:59:53,278 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 17:59:53,278 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:59:55,279 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 17:59:57,486 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 18:00:01,182 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 18:00:01,183 DEBUG   SenderThread:217589 [sender.py:send():336] send: stats
+2023-06-28 18:00:01,185 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 18:00:03,350 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 18:00:08,351 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 18:00:13,353 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 18:00:16,182 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 18:00:16,183 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 18:00:19,337 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 18:00:24,344 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 18:00:29,350 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 18:00:31,182 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 18:00:31,187 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 18:00:31,337 DEBUG   SenderThread:217589 [sender.py:send():336] send: stats
+2023-06-28 18:00:35,341 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 18:00:40,342 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 18:00:42,731 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:00:44,329 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 18:00:45,098 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:00:45,100 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:00:45,101 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 18:00:45,102 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 18:00:45,102 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 18:00:45,330 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 18:00:45,331 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 18:00:46,104 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 18:00:46,182 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 18:00:46,183 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 18:00:47,332 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 18:00:47,494 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:00:47,496 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:00:47,497 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 18:00:47,497 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 18:00:47,498 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 18:00:48,333 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 18:00:49,333 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 18:00:49,845 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:00:49,846 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:00:49,847 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 18:00:49,848 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 18:00:49,849 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 18:00:50,334 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 18:00:51,335 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 18:00:51,850 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 18:00:52,204 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:00:52,205 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:00:52,206 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 18:00:52,207 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 18:00:52,208 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 18:00:52,335 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 18:00:53,336 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 18:00:54,619 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:00:54,621 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:00:54,622 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 18:00:54,623 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 18:00:54,623 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 18:00:55,337 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 18:00:55,338 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 18:00:56,938 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:00:56,940 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:00:56,941 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 18:00:56,941 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 18:00:56,942 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 18:00:56,943 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 18:00:57,338 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 18:00:59,310 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:00:59,312 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:00:59,313 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 18:00:59,314 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 18:00:59,315 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 18:00:59,340 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 18:00:59,341 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 18:01:01,182 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 18:01:01,183 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 18:01:01,340 DEBUG   SenderThread:217589 [sender.py:send():336] send: stats
+2023-06-28 18:01:01,346 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 18:01:01,643 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:01:01,645 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:01:01,646 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 18:01:01,647 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 18:01:01,647 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 18:01:02,347 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 18:01:02,649 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 18:01:03,348 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 18:01:04,007 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:01:04,009 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:01:04,010 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 18:01:04,010 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 18:01:04,011 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 18:01:04,349 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 18:01:05,352 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 18:01:06,365 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:01:06,367 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:01:06,368 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 18:01:06,368 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 18:01:06,369 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 18:01:07,355 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 18:01:07,356 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 18:01:08,370 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 18:01:13,371 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 18:01:16,184 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 18:01:16,184 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 18:01:19,348 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 18:01:24,355 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 18:01:29,361 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 18:01:31,186 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 18:01:31,187 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 18:01:31,360 DEBUG   SenderThread:217589 [sender.py:send():336] send: stats
+2023-06-28 18:01:34,363 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 18:01:39,364 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 18:01:44,366 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 18:01:46,188 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 18:01:46,189 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 18:01:50,351 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 18:01:55,357 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 18:01:55,925 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:01:57,413 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 18:01:58,348 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:01:58,350 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:01:58,351 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 18:01:58,352 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 18:01:58,353 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 18:01:58,414 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 18:01:58,414 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 18:01:59,415 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 18:02:00,689 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:02:00,690 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:02:00,692 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 18:02:00,692 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 18:02:00,692 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 18:02:00,694 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 18:02:01,188 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 18:02:01,189 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 18:02:01,335 DEBUG   SenderThread:217589 [sender.py:send():336] send: stats
+2023-06-28 18:02:01,416 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 18:02:01,416 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 18:02:03,084 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:02:03,085 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:02:03,087 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 18:02:03,087 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 18:02:03,092 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 18:02:03,419 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 18:02:05,391 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:02:05,392 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:02:05,393 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 18:02:05,394 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 18:02:05,395 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 18:02:05,424 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 18:02:05,425 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 18:02:06,397 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 18:02:07,428 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 18:02:07,736 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:02:07,738 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:02:07,739 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 18:02:07,739 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 18:02:07,740 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 18:02:08,431 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 18:02:09,434 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 18:02:10,100 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:02:10,101 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:02:10,103 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 18:02:10,103 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 18:02:10,104 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 18:02:10,437 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 18:02:11,439 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 18:02:12,105 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 18:02:12,504 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:02:12,506 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:02:12,507 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 18:02:12,507 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 18:02:12,508 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 18:02:13,440 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 18:02:13,441 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 18:02:14,962 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:02:14,964 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:02:14,965 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 18:02:14,965 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 18:02:14,966 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 18:02:15,443 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 18:02:16,190 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-28 18:02:16,191 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: stop_status
+2023-06-28 18:02:17,337 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:02:17,338 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-28 18:02:17,339 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 18:02:17,339 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 18:02:17,341 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 18:02:17,341 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 18:02:17,444 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 18:02:17,445 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 18:02:18,583 DEBUG   SenderThread:217589 [sender.py:send():336] send: exit
+2023-06-28 18:02:18,583 INFO    SenderThread:217589 [sender.py:send_exit():559] handling exit code: 255
+2023-06-28 18:02:18,584 INFO    SenderThread:217589 [sender.py:send_exit():561] handling runtime: 467
+2023-06-28 18:02:18,585 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 18:02:18,585 INFO    SenderThread:217589 [sender.py:send_exit():567] send defer
+2023-06-28 18:02:18,585 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: defer
+2023-06-28 18:02:18,586 INFO    HandlerThread:217589 [handler.py:handle_request_defer():170] handle defer: 0
+2023-06-28 18:02:18,586 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: defer
+2023-06-28 18:02:18,586 INFO    SenderThread:217589 [sender.py:send_request_defer():583] handle sender defer: 0
+2023-06-28 18:02:18,587 INFO    SenderThread:217589 [sender.py:transition_state():587] send defer: 1
+2023-06-28 18:02:18,587 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: defer
+2023-06-28 18:02:18,587 INFO    HandlerThread:217589 [handler.py:handle_request_defer():170] handle defer: 1
+2023-06-28 18:02:18,588 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: defer
+2023-06-28 18:02:18,588 INFO    SenderThread:217589 [sender.py:send_request_defer():583] handle sender defer: 1
+2023-06-28 18:02:18,588 INFO    SenderThread:217589 [sender.py:transition_state():587] send defer: 2
+2023-06-28 18:02:18,588 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: defer
+2023-06-28 18:02:18,589 INFO    HandlerThread:217589 [handler.py:handle_request_defer():170] handle defer: 2
+2023-06-28 18:02:18,589 INFO    HandlerThread:217589 [system_monitor.py:finish():193] Stopping system monitor
+2023-06-28 18:02:18,591 DEBUG   SystemMonitor:217589 [system_monitor.py:_start():168] Finished system metrics aggregation loop
+2023-06-28 18:02:18,592 DEBUG   SystemMonitor:217589 [system_monitor.py:_start():172] Publishing last batch of metrics
+2023-06-28 18:02:18,596 INFO    HandlerThread:217589 [interfaces.py:finish():199] Joined cpu monitor
+2023-06-28 18:02:18,596 INFO    HandlerThread:217589 [interfaces.py:finish():199] Joined disk monitor
+2023-06-28 18:02:18,671 INFO    HandlerThread:217589 [interfaces.py:finish():199] Joined gpu monitor
+2023-06-28 18:02:18,671 INFO    HandlerThread:217589 [interfaces.py:finish():199] Joined memory monitor
+2023-06-28 18:02:18,672 INFO    HandlerThread:217589 [interfaces.py:finish():199] Joined network monitor
+2023-06-28 18:02:18,673 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: defer
+2023-06-28 18:02:18,673 INFO    SenderThread:217589 [sender.py:send_request_defer():583] handle sender defer: 2
+2023-06-28 18:02:18,674 INFO    SenderThread:217589 [sender.py:transition_state():587] send defer: 3
+2023-06-28 18:02:18,674 DEBUG   SenderThread:217589 [sender.py:send():336] send: stats
+2023-06-28 18:02:18,674 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: defer
+2023-06-28 18:02:18,676 INFO    HandlerThread:217589 [handler.py:handle_request_defer():170] handle defer: 3
+2023-06-28 18:02:18,678 DEBUG   SenderThread:217589 [sender.py:send():336] send: history
+2023-06-28 18:02:18,678 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: summary_record
+2023-06-28 18:02:18,679 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 18:02:18,679 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: defer
+2023-06-28 18:02:18,680 INFO    SenderThread:217589 [sender.py:send_request_defer():583] handle sender defer: 3
+2023-06-28 18:02:18,680 INFO    SenderThread:217589 [sender.py:transition_state():587] send defer: 4
+2023-06-28 18:02:18,680 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: defer
+2023-06-28 18:02:18,680 INFO    HandlerThread:217589 [handler.py:handle_request_defer():170] handle defer: 4
+2023-06-28 18:02:18,681 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: defer
+2023-06-28 18:02:18,681 INFO    SenderThread:217589 [sender.py:send_request_defer():583] handle sender defer: 4
+2023-06-28 18:02:18,681 INFO    SenderThread:217589 [sender.py:transition_state():587] send defer: 5
+2023-06-28 18:02:18,681 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: defer
+2023-06-28 18:02:18,682 INFO    HandlerThread:217589 [handler.py:handle_request_defer():170] handle defer: 5
+2023-06-28 18:02:18,683 DEBUG   SenderThread:217589 [sender.py:send():336] send: summary
+2023-06-28 18:02:18,683 INFO    SenderThread:217589 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-06-28 18:02:18,684 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: defer
+2023-06-28 18:02:18,684 INFO    SenderThread:217589 [sender.py:send_request_defer():583] handle sender defer: 5
+2023-06-28 18:02:18,684 INFO    SenderThread:217589 [sender.py:transition_state():587] send defer: 6
+2023-06-28 18:02:18,684 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: defer
+2023-06-28 18:02:18,684 INFO    HandlerThread:217589 [handler.py:handle_request_defer():170] handle defer: 6
+2023-06-28 18:02:18,685 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: defer
+2023-06-28 18:02:18,685 INFO    SenderThread:217589 [sender.py:send_request_defer():583] handle sender defer: 6
+2023-06-28 18:02:18,685 INFO    SenderThread:217589 [sender.py:transition_state():587] send defer: 7
+2023-06-28 18:02:18,685 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: status_report
+2023-06-28 18:02:18,686 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: defer
+2023-06-28 18:02:18,686 INFO    HandlerThread:217589 [handler.py:handle_request_defer():170] handle defer: 7
+2023-06-28 18:02:18,687 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: defer
+2023-06-28 18:02:18,687 INFO    SenderThread:217589 [sender.py:send_request_defer():583] handle sender defer: 7
+2023-06-28 18:02:19,446 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 18:02:19,447 INFO    Thread-13 :217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 18:02:19,476 INFO    SenderThread:217589 [sender.py:transition_state():587] send defer: 8
+2023-06-28 18:02:19,477 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: defer
+2023-06-28 18:02:19,477 INFO    HandlerThread:217589 [handler.py:handle_request_defer():170] handle defer: 8
+2023-06-28 18:02:19,478 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: defer
+2023-06-28 18:02:19,478 INFO    SenderThread:217589 [sender.py:send_request_defer():583] handle sender defer: 8
+2023-06-28 18:02:19,479 INFO    SenderThread:217589 [sender.py:transition_state():587] send defer: 9
+2023-06-28 18:02:19,479 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: defer
+2023-06-28 18:02:19,480 INFO    HandlerThread:217589 [handler.py:handle_request_defer():170] handle defer: 9
+2023-06-28 18:02:19,480 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: defer
+2023-06-28 18:02:19,480 INFO    SenderThread:217589 [sender.py:send_request_defer():583] handle sender defer: 9
+2023-06-28 18:02:19,481 INFO    SenderThread:217589 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-06-28 18:02:19,586 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-28 18:02:20,448 INFO    SenderThread:217589 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 18:02:20,449 INFO    SenderThread:217589 [dir_watcher.py:finish():395] scan: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files
+2023-06-28 18:02:20,450 INFO    SenderThread:217589 [dir_watcher.py:finish():409] scan save: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json wandb-summary.json
+2023-06-28 18:02:20,450 INFO    SenderThread:217589 [dir_watcher.py:finish():409] scan save: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log output.log
+2023-06-28 18:02:20,451 INFO    SenderThread:217589 [dir_watcher.py:finish():409] scan save: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/config.yaml config.yaml
+2023-06-28 18:02:20,451 INFO    SenderThread:217589 [dir_watcher.py:finish():409] scan save: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-metadata.json wandb-metadata.json
+2023-06-28 18:02:20,452 INFO    SenderThread:217589 [dir_watcher.py:finish():409] scan save: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/requirements.txt requirements.txt
+2023-06-28 18:02:20,452 INFO    SenderThread:217589 [sender.py:transition_state():587] send defer: 10
+2023-06-28 18:02:20,460 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: poll_exit
+2023-06-28 18:02:20,466 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: defer
+2023-06-28 18:02:20,472 INFO    HandlerThread:217589 [handler.py:handle_request_defer():170] handle defer: 10
+2023-06-28 18:02:20,482 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: defer
+2023-06-28 18:02:20,483 INFO    SenderThread:217589 [sender.py:send_request_defer():583] handle sender defer: 10
+2023-06-28 18:02:20,483 INFO    SenderThread:217589 [file_pusher.py:finish():164] shutting down file pusher
+2023-06-28 18:02:20,588 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-28 18:02:20,589 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: poll_exit
+2023-06-28 18:02:20,932 INFO    wandb-upload_2:217589 [upload_job.py:push():138] Uploaded file /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/config.yaml
+2023-06-28 18:02:20,963 INFO    wandb-upload_3:217589 [upload_job.py:push():138] Uploaded file /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/requirements.txt
+2023-06-28 18:02:20,967 INFO    wandb-upload_0:217589 [upload_job.py:push():138] Uploaded file /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/wandb-summary.json
+2023-06-28 18:02:20,979 INFO    wandb-upload_1:217589 [upload_job.py:push():138] Uploaded file /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/files/output.log
+2023-06-28 18:02:21,180 INFO    Thread-12 :217589 [sender.py:transition_state():587] send defer: 11
+2023-06-28 18:02:21,181 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: defer
+2023-06-28 18:02:21,181 INFO    HandlerThread:217589 [handler.py:handle_request_defer():170] handle defer: 11
+2023-06-28 18:02:21,182 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: defer
+2023-06-28 18:02:21,182 INFO    SenderThread:217589 [sender.py:send_request_defer():583] handle sender defer: 11
+2023-06-28 18:02:21,182 INFO    SenderThread:217589 [file_pusher.py:join():169] waiting for file pusher
+2023-06-28 18:02:21,182 INFO    SenderThread:217589 [sender.py:transition_state():587] send defer: 12
+2023-06-28 18:02:21,183 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: defer
+2023-06-28 18:02:21,183 INFO    HandlerThread:217589 [handler.py:handle_request_defer():170] handle defer: 12
+2023-06-28 18:02:21,184 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: defer
+2023-06-28 18:02:21,184 INFO    SenderThread:217589 [sender.py:send_request_defer():583] handle sender defer: 12
+2023-06-28 18:02:21,590 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-28 18:02:21,824 INFO    SenderThread:217589 [sender.py:transition_state():587] send defer: 13
+2023-06-28 18:02:21,824 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: poll_exit
+2023-06-28 18:02:21,824 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: defer
+2023-06-28 18:02:21,825 INFO    HandlerThread:217589 [handler.py:handle_request_defer():170] handle defer: 13
+2023-06-28 18:02:21,826 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: defer
+2023-06-28 18:02:21,826 INFO    SenderThread:217589 [sender.py:send_request_defer():583] handle sender defer: 13
+2023-06-28 18:02:21,826 INFO    SenderThread:217589 [sender.py:transition_state():587] send defer: 14
+2023-06-28 18:02:21,827 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: defer
+2023-06-28 18:02:21,828 INFO    HandlerThread:217589 [handler.py:handle_request_defer():170] handle defer: 14
+2023-06-28 18:02:21,828 DEBUG   SenderThread:217589 [sender.py:send():336] send: final
+2023-06-28 18:02:21,829 DEBUG   SenderThread:217589 [sender.py:send():336] send: footer
+2023-06-28 18:02:21,829 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: defer
+2023-06-28 18:02:21,829 INFO    SenderThread:217589 [sender.py:send_request_defer():583] handle sender defer: 14
+2023-06-28 18:02:21,830 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-28 18:02:21,831 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: poll_exit
+2023-06-28 18:02:21,832 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-28 18:02:21,833 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: poll_exit
+2023-06-28 18:02:21,834 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: server_info
+2023-06-28 18:02:21,835 DEBUG   SenderThread:217589 [sender.py:send_request():363] send_request: server_info
+2023-06-28 18:02:21,841 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: get_summary
+2023-06-28 18:02:21,842 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: sampled_history
+2023-06-28 18:02:22,156 INFO    MainThread:217589 [wandb_run.py:_footer_history_summary_info():3422] rendering history
+2023-06-28 18:02:22,157 INFO    MainThread:217589 [wandb_run.py:_footer_history_summary_info():3454] rendering summary
+2023-06-28 18:02:22,158 INFO    MainThread:217589 [wandb_run.py:_footer_sync_info():3380] logging synced files
+2023-06-28 18:02:22,159 DEBUG   HandlerThread:217589 [handler.py:handle_request():144] handle_request: shutdown
+2023-06-28 18:02:22,159 INFO    HandlerThread:217589 [handler.py:finish():842] shutting down handler
+2023-06-28 18:02:22,835 INFO    WriterThread:217589 [datastore.py:close():298] close: /home/abenzaamia/NeuCF/federated/wandb/run-20230628_175430-cduf7jdq/run-cduf7jdq.wandb
+2023-06-28 18:02:23,157 INFO    SenderThread:217589 [sender.py:finish():1504] shutting down sender
+2023-06-28 18:02:23,157 INFO    SenderThread:217589 [file_pusher.py:finish():164] shutting down file pusher
+2023-06-28 18:02:23,157 INFO    SenderThread:217589 [file_pusher.py:join():169] waiting for file pusher

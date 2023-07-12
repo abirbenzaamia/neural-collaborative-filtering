@@ -1,0 +1,69 @@
+
+
+
+
+
+
+
+
+
+
+
+
+epoch: 10, loss: 0.44, time: 11.93:   2%|▏        | 10/400 [01:56<1:21:04, 12.47s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 20, loss: 0.44, time: 10.73:   5%|▍        | 20/400 [03:44<1:10:32, 11.14s/it]
+
+
+
+
+
+
+
+
+
+
+
+epoch: 30, loss: 0.42, time: 11.18:   8%|▋        | 30/400 [05:30<1:09:16, 11.23s/it]
+
+epoch: 31, loss: 0.43, time: 11.00:   8%|▋        | 31/400 [05:44<1:08:16, 11.10s/it]
+Traceback (most recent call last):
+  File "src/main.py", line 93, in <module>
+    main()
+  File "src/main.py", line 74, in main
+    trained_model = run_server(dataset, num_clients=args.c, epochs=args.epochs,
+  File "/home/abenzaamia/MLP/federated/src/server.py", line 39, in run_server
+    trained_weights = training_process(server_model, clients, num_clients, epochs, local_epochs, dataset, args)
+  File "/home/abenzaamia/MLP/federated/src/fedmlp/train.py", line 66, in training_process
+    w, loss = single_train_round(server_model, clients, local_epochs)
+  File "/home/abenzaamia/MLP/federated/src/fedmlp/train.py", line 112, in single_train_round
+    weights, loss = client.train(server_model_copy, local_epochs)
+  File "/home/abenzaamia/MLP/federated/src/client.py", line 46, in train
+    for _, (u, i, l) in enumerate(dataloader):
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 677, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 54, in fetch
+    return self.collate_fn(data)
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/utils/data/_utils/collate.py", line 265, in default_collate
+    return collate(batch, collate_fn_map=default_collate_fn_map)
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/utils/data/_utils/collate.py", line 142, in collate
+    return [collate(samples, collate_fn_map=collate_fn_map) for samples in transposed]  # Backwards compatibility.
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/utils/data/_utils/collate.py", line 142, in <listcomp>
+    return [collate(samples, collate_fn_map=collate_fn_map) for samples in transposed]  # Backwards compatibility.
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/utils/data/_utils/collate.py", line 119, in collate
+    return collate_fn_map[elem_type](batch, collate_fn_map=collate_fn_map)
+  File "/home/abenzaamia/.venv/lib/python3.8/site-packages/torch/utils/data/_utils/collate.py", line 162, in collate_tensor_fn
+    return torch.stack(batch, 0, out=out)
+KeyboardInterrupt
