@@ -1,3 +1,6 @@
+from fedanal.plot import Plot
+from fedanal.predict import predict_all_clients
+from fedanal.triehh import SimulateTrieHH
 from server import run_server, initialize_clients
 from fedmlp.train import sample_clients
 from dataset import Dataset
@@ -82,18 +85,55 @@ def main():
     # pick random client & generate recommendations for them
     clients = initialize_clients(dataset)
     client, _ = sample_clients(clients, 610)
-    recommendations = client[1].generate_recommendation(server_model=trained_model, num_items=dataset.num_items, k = args.top_k)
-    hist = client[1].get_historical_data()
+    # recommendations = client[1].generate_recommendation(server_model=trained_model, num_items=dataset.num_items, k = args.top_k)
+    # hist = client[1].get_historical_data()
 
-    print('Recommendations for user id:', client[1].client_id)
-    if args.dataset == 'movielens':
-        print(dataset.get_movie_names(raw_path,recommendations))
+    # print('Recommendations for user id:', client[1].client_id)
+    # if args.dataset == 'movielens':
+    #     print(dataset.get_movie_names(raw_path,recommendations))
     
-    else:
-        print(recommendations)
+    # else:
+    #     print(recommendations)
 
-    print('Historical data for user id:', client[1].client_id)
-    print(dataset.get_movie_names(raw_path, hist))
+    # print('Historical data for user id:', client[1].client_id)
+    # print(dataset.get_movie_names(raw_path, hist))
 
+    out_path = 'pretrained'
+    predict_all_clients(trained_model, client,dataset.num_users, dataset.num_items, out_path)
+
+    max_k = 10
+
+    # length of longest word
+    max_word_len = 10
+    # epsilon for differential privacy
+    epsilon = 4
+    # delta for differential privacy
+    delta = 2.3e-9
+
+    # repeat simulation for num_runs times
+    num_runs = 100
+    print('--------------------- Federated analytics ---------------------')
+    simulate_triehh = SimulateTrieHH(
+      out_path= out_path, max_list_len=max_word_len, epsilon=epsilon, delta=delta, num_runs=num_runs)
+    triehh_heavy_hitters = simulate_triehh.get_heavy_hitters()
+    
+    print(triehh_heavy_hitters)
+    plot = Plot(max_k)
+    plot.plot_f1_scores(triehh_heavy_hitters, epsilon)
+    # recommendations = client[1].generate_recommendation(server_model=trained_model, num_items=dataset.num_items, k = args.top_k)
+    # hist = client[1].get_historical_data()
+    
+    # print('Recommendations for user id:', client[1].client_id)
+    # if args.dataset == 'movielens':
+    #     print(dataset.get_movie_names(raw_path,recommendations))
+    
+    # else:
+    #     print(recommendations)
+
+    # print('Historical data for user id:', client[1].client_id)
+    # print(dataset.get_movie_names(raw_path, hist))
+    #federated analytics
+    # print('--------------------- Federated analytics ---------------------')
+    # get_similar_items(trained_model, dataset.num_users, dataset.num_items, k=10, dataset=dataset, raw_path = raw_path)
 if __name__ == '__main__':
     main()

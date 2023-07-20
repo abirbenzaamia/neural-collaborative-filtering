@@ -51,7 +51,6 @@ class Client(fedmlp.client.Client):
                 optimizer.step()
 
         return server_model.state_dict(), loss
-
     def generate_recommendation(self, server_model: torch.nn.Module,
                                 num_items: int,  k: Optional[int] = TOPK) -> List[int]:
         """
@@ -61,7 +60,9 @@ class Client(fedmlp.client.Client):
         :return: list of `k` movie recommendations
         """
         # get movies that user has not yet interacted with
-        movies = set(range(num_items)).difference(set(self.client_data['item_id'].tolist()))
+        hist= self.client_data['item_id'][self.client_data['label']==1]
+
+        movies = set(range(num_items)).difference(hist.tolist())
         movies = torch.tensor(list(movies), dtype=torch.int, device=DEVICE)
         client_id = torch.tensor([self.client_id for _ in range(len(movies))], dtype=torch.int, device=DEVICE)
         # obtain predictions in terms of logit per movie
@@ -70,10 +71,34 @@ class Client(fedmlp.client.Client):
 
         rec_dict = {movie: p for movie, p in zip(movies.tolist(), logits.squeeze().tolist())}
         # select top k recommendations
+        
         top_k = sorted(rec_dict.items(), key=lambda x: -x[1])[:k]
+        
         rec, _ = zip(*top_k)
 
         return rec
+    # def generate_recommendation(self, server_model: torch.nn.Module,
+    #                             num_items: int,  k: Optional[int] = TOPK) -> List[int]:
+    #     """
+    #     :param server_model: server model which will be used to generate predictions
+    #     :param num_items: total number of unique items in dataset
+    #     :param k: number of recommendations to generate
+    #     :return: list of `k` movie recommendations
+    #     """
+    #     # get movies that user has not yet interacted with
+    #     movies = set(range(num_items)).difference(set(self.client_data['item_id'].tolist()))
+    #     movies = torch.tensor(list(movies), dtype=torch.int, device=DEVICE)
+    #     client_id = torch.tensor([self.client_id for _ in range(len(movies))], dtype=torch.int, device=DEVICE)
+    #     # obtain predictions in terms of logit per movie
+    #     with torch.no_grad():
+    #         logits, _ = server_model(client_id, movies)
+
+    #     rec_dict = {movie: p for movie, p in zip(movies.tolist(), logits.squeeze().tolist())}
+    #     # select top k recommendations
+    #     top_k = sorted(rec_dict.items(), key=lambda x: -x[1])[:k]
+    #     rec, _ = zip(*top_k)
+
+    #     return rec
     
     def get_historical_data(self) -> List[int]:
         """
