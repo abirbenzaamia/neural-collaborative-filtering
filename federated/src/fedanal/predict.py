@@ -18,9 +18,36 @@ def predict_all_clients(server_model:torch.nn.Module, client, num_users, num_ite
     # save predictions file 
     with open(os.path.join(out_path, 'predictions.pkl'), 'wb') as fp:
             pickle.dump(predictions, fp)
-    generate_items_fre(predictions, out_path)
+    return predictions
+    #generate_items_fre(predictions, out_path)
     
 
+def generate_frequency_in_topk(recomendations, k, out_path):
+   
+  clients_topk_items = []
+  top_items_counts = {}
+
+  for reco_lists in recomendations:
+     topk_items = reco_lists[:k]
+     for i in topk_items:
+        clients_topk_items.append(i)
+        if i not in top_items_counts:
+           top_items_counts[i] = 1
+        else:
+           top_items_counts[i] +=1
+
+  #compute frequencies for top items
+  top_items_frequencies = {}
+  sum_num = sum(top_items_counts.values())
+  for i in top_items_counts:
+    top_items_frequencies[i] = top_items_counts[i] * 1.0 / sum_num
+
+  clients_topk_items = np.array(clients_topk_items)
+
+  with open(os.path.join(out_path, 'items_frequencies.pkl'), 'wb') as fp:
+    pickle.dump(top_items_frequencies, fp)
+
+  return top_items_frequencies
 
 def generate_items_fre(recommendations, out_path):
        # maximum word length

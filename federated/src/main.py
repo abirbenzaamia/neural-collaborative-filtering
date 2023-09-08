@@ -1,5 +1,5 @@
 from fedanal.plot import Plot
-from fedanal.predict import predict_all_clients
+from fedanal.predict import predict_all_clients, generate_frequency_in_topk
 from fedanal.triehh import SimulateTrieHH
 from server import run_server, initialize_clients
 from fedmlp.train import sample_clients
@@ -99,7 +99,7 @@ def main():
     # print(dataset.get_movie_names(raw_path, hist))
 
     out_path = 'pretrained'
-    predict_all_clients(trained_model, client,dataset.num_users, dataset.num_items, out_path)
+    predictions = predict_all_clients(trained_model, client,dataset.num_users, dataset.num_items, out_path)
 
     max_k = 10
 
@@ -109,17 +109,36 @@ def main():
     epsilon = 4
     # delta for differential privacy
     delta = 2.3e-9
-
-    # repeat simulation for num_runs times
-    num_runs = 100
-    print('--------------------- Federated analytics ---------------------')
-    simulate_triehh = SimulateTrieHH(
-      out_path= out_path, max_list_len=max_word_len, epsilon=epsilon, delta=delta, num_runs=num_runs)
-    triehh_heavy_hitters = simulate_triehh.get_heavy_hitters()
     
-    print(triehh_heavy_hitters)
+    # repeat simulation for num_runs times
+    num_runs = 50
+    final_result = []
+    final_freq = []
+    print('--------------------- Federated analytics ---------------------')
+    for topk in range(max_k):
+        simulate_triehh = SimulateTrieHH(
+        out_path= out_path, max_list_len=max_word_len, epsilon=epsilon, delta=delta, num_runs=num_runs)
+        triehh_heavy_hitters = simulate_triehh.get_heavy_hitters(topk+1)
+        print('Discovered top items in top,', topk+1)
+        final_result.append(triehh_heavy_hitters)
+ 
+
+    print('--------------------- Evaluation ---------------------')
     plot = Plot(max_k)
-    plot.plot_f1_scores(triehh_heavy_hitters, epsilon)
+    precisions = []
+    recalls = []
+    f1_scores = []
+    for topk in range(max_k):
+        # get real frequencies 
+        freq = generate_frequency_in_topk(predictions, topk+1, out_path)
+        #print('-----------',freq)
+        discovered_pop_items = final_result[topk]
+        precision, recall, f1_score = plot.calculate_f1_score(discovered_pop_items, freq)
+        precisions.append(precision)
+        recalls.append(recall)
+        f1_scores.append(f1_score)
+    
+    plot.plot_f1_scores(precisions, recalls, f1_scores, epsilon, max_k=max_k)
     # recommendations = client[1].generate_recommendation(server_model=trained_model, num_items=dataset.num_items, k = args.top_k)
     # hist = client[1].get_historical_data()
     

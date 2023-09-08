@@ -17,8 +17,10 @@ class MultiLayerPerceptron(torch.nn.Module):
         self.mlp_embedding_user = torch.nn.Embedding(num_embeddings=num_users, embedding_dim=mlp_dim, device=DEVICE)
         self.mlp_embedding_item = torch.nn.Embedding(num_embeddings=num_items, embedding_dim=mlp_dim, device=DEVICE)
         #print('-----------------', mlp_dim)
+        self.mlp_embedding_user.weight.data.uniform_(0, 1)
+        self.mlp_embedding_item.weight.data.uniform_(0, 1)
         self.mlp = torch.nn.ModuleList()
-        current_dim = 64
+        current_dim = 48
         for idx in range(1, len(layers)):
             self.mlp.append(torch.nn.Linear(current_dim, layers[idx]))
             current_dim = layers[idx]

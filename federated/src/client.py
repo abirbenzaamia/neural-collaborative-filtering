@@ -40,7 +40,7 @@ class Client(fedmlp.client.Client):
         dataset = torch.utils.data.TensorDataset(user_input, item_input, labels)
         dataloader = torch.utils.data.DataLoader(dataset, batch_size=BATCH_SIZE, shuffle=True)
 
-        optimizer = torch.optim.AdamW(server_model.parameters(), lr=LEARNING_RATE)
+        optimizer = torch.optim.AdamW( server_model.parameters(), lr=LEARNING_RATE, betas=(0.9, 0.999), weight_decay=0.01)
         loss = None
         for _ in range(local_epochs):
             for _, (u, i, l) in enumerate(dataloader):

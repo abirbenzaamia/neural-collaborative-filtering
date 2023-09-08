@@ -25,7 +25,7 @@ class ServerState(object):
 class SimulateTrieHH(object):
   """Simulation for TrieHH."""
 
-  def __init__(self,out_path, max_list_len=10, epsilon=1.0, delta = 2.3e-12, num_runs=100):
+  def __init__(self,out_path, max_list_len=10, epsilon=1.0, delta = 2.3e-12, num_runs=10):
     self.MAX_L = max_list_len
     self.delta = delta
     self.epsilon = epsilon
@@ -48,7 +48,7 @@ class SimulateTrieHH(object):
     print(f'Total number of clients: {self.clients_num}')
 
   def _set_theta(self):
-    theta = 5  # initial guess
+    theta = 4  # initial guess
     delta_inverse = 1 / self.delta
     while ((theta - 3) / (theta - 2)) * math.factorial(theta) < delta_inverse:
       theta += 1
@@ -63,16 +63,20 @@ class SimulateTrieHH(object):
     self.batch_size = int( self.clients_num * (np.e ** (self.epsilon/self.MAX_L) - 1)/(self.theta * np.e ** (self.epsilon/self.MAX_L)))
     print(f'Batch size used by TrieHH: {self.batch_size}')
 
+
+  def client_initialize(self):
+    for items in random.sample(list(self.clients), self.batch_size):
+        if items[0] in self.server_state.trie:
+          #print("--------------------")
+          self.server_state.trie[items[0]] += 1
+        else:
+          self.server_state.trie[items[0]] = 1
+        self.server_state.quit_sign = False
+        #print(items)
+        
   def client_vote(self, items, r):
-    if len(items) < r:
-          return 0
-    #print(items)
-    #print(r)
-    if r ==1:
-      return 1
-    
-    #pre = items
-    pre = items[r:]
+    #print(self.server_state.trie)
+    pre = items[:r]
     #print(pre)
     #print(self.server_state.trie)
     verif = False
@@ -80,108 +84,81 @@ class SimulateTrieHH(object):
     while not verif and i< len(pre) :
       #print(pre)
       if(pre[i] in self.server_state.trie):
-        verif = True
+        return 1, pre[i]
       i +=1
     if not verif:
-      return 0
-    # for item in pre:
-    #   if item and (item in self.server_state.trie):
-    return 1
-    # if len(items) < r:
-    #   return 0
-    # if r == 1:
-    #   pre = items[0]
-    #   #print(pre)
-    #   return 1
-    # else:
-    #   #print(pre)
-    # #print(items)
-    #   for _ in items:
-    #     pre = _
-    #     if pre and (pre in self.server_state.trie):
-    #       return 1
-    # return 0
+      return 0, -1
+
 
   def client_updates(self, r):
-    # I encourage you to think about how we could rewrite this function to do
-    # one client update (i.e. return 1 vote from 1 chosen client).
-    # Then you can have an outer for loop that iterates over chosen clients
-    # and calls self.client_update() for each chosen and accumulates the votes.
-
     votes = defaultdict(int)
     voters = []
-    #get voters ids i.e. users 
+    #get recommended items from randomy selected users
     for items in random.sample(list(self.clients), self.batch_size):
         voters.append(items)
     #print(voters)
-
     for items in voters:
-        vote_result = self.client_vote(items, r)
-        #print(vote_result)
+        #print('**********************')
+        #print(items)
+        vote_result, item = self.client_vote(items, r)
+        #vote_results is 1
         if vote_result > 0:
-            #print(items[0:r])
-            # print(items)
-            # print(vote_result)
-            #print(votes)
-            print(items)
-            votes[items[0:r][0]] += vote_result
+            votes[item] += vote_result
     return votes
 
-  def server_update(self, votes):
-    # It might make more sense to define a small class called server_state
-    # server_state can track 2 things: 1) updated trie, and 2) quit_sign
-    # server_state can be initialized in the constructor of SimulateTrieHH
-    # and server_update would just update server_state
-    # (i.e, it would update self.server_state.trie & self.server_state.quit_sign)
-      
+
+  def server_update(self, votes):      
     self.server_state.quit_sign = True
-    for prefix in votes:
-      if votes[prefix] >= 2:
-        print("--------")
-        print(votes)
-        self.server_state.trie[prefix] = None
+    for item in votes:
+      if self.server_state.trie[item] != votes[item]:
         self.server_state.quit_sign = False
 
-    # self.server_state.quit_sign = True
-    # #print('-----------------',self.theta)
-    # for prefix in votes:
-    #   #print(prefix)
-    #   if votes[prefix] == 1: 
-    #     self.server_state.trie[prefix] = None
-    #     self.server_state.quit_sign = False
-    #   if votes[prefix] >= self.theta:
-    #   #if votes[prefix] >= 2:
-    #     self.server_state.trie[prefix] = None
-    #     self.server_state.quit_sign = False
-
-  def start(self, batch_size):
+  def start(self, r,batch_size):
     """Implementation of TrieHH."""
+    results = defaultdict(int)
     self.server_state.trie.clear()
-    r = 1
+    # intialize clients
+    self.client_initialize()
+    #print(self.server_state.trie)
     while True:
+      votes_before = self.server_state.trie
       votes = self.client_updates(r)
-      self.server_update(votes)
-      #print(votes)
-      r +=1
-      #r = 10
-      if self.server_state.quit_sign or r > self.MAX_L:
+      for i in votes:
+        self.server_state.trie[i] += votes[i]
+      self.server_update(votes_before)
+      if self.server_state.quit_sign:
         break
-      #print(r)
+    print(self.server_state.trie)
+    keys_to_remove = []
+    for i in self.server_state.trie:
+      if self.server_state.trie[i] < 3:
+         keys_to_remove.append(i)
+        #self.server_state.trie.pop(i, None)
+    for key in keys_to_remove:
+      del self.server_state.trie[key]
 
-  def get_heavy_hitters(self):
+
+
+  def get_heavy_hitters(self,r):
     heavy_hitters = []
     for run in range(self.num_runs):
-      self.start(self.batch_size)
+      self.start(r,self.batch_size)
       #print(self.server_state.trie)
       raw_result = self.server_state.trie.keys()
       #print(raw_result)
       results = []
-      for word in raw_result:
+      for item in raw_result:
         # if len(word<10):
-        results.append(word)
+        results.append(item)
         # if word[-1:] == '$':
         #   results.append(word.rstrip('$'))
       print(f'Discovered {len(results)} heavy hitters in run #{run+1}')
       print(results)
       heavy_hitters.append(results)
-    return heavy_hitters
+
+    #print(heavy_hitters)
+    one_list = list(set().union(*heavy_hitters))
+    final_list = list(one_list)
+
+    return final_list
+
