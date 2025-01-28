@@ -1,4 +1,4 @@
-# **FedMLP: Federated Recommendation System**
+# **FedRec: Federated Recommendation System**
 
 ## **Overview**
 FedRec proposes the federated learning versions of recommendation algorithms proposed by [He et al., 2017]. FedRec includes 3 federated algorithms: Federated Generalized Matrix Factorization (FedGMF), Federated Neural Collaborative Filtering (FedNCF) and Federated Neural Matrix Factorization (FedNeuMF). The repo contains necessary code to evaluate models' performance with different metrics and compare their performance to centralized versions.
